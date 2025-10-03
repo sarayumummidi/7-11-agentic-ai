@@ -1,81 +1,122 @@
+#used to work with file and folder paths in a clean way
 from pathlib import Path
-from langchain_community.document_loaders import PyPDFLoader
+#lets us handle images when we need OCR
+from PIL import Image
+#lets us extract text from images
+import pytesseract
+#LangChain utility to break long text into smaller chunks
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
+#database for storing and searching vector embeddings
+from langchain_community.vectorstores import FAISS
+#generates embeddings (numeric vectors that capture meaning of text)
 from langchain_community.embeddings import SentenceTransformerEmbeddings
+#allows us to call local LLMs
+from langchain_community.llms import Ollama
+#LangChain wrapper to combine retrieval + LLM answering
+from langchain.chains import RetrievalQA
 
-#step 1: get the PDFs from where they are stored
-
-#get the path of where the PDFs are stored in the directory 
-pdf_dir = Path("data/Franke")
-#each page for each PDF is loaded into memory as a document object, the document contains page content and metadata
-#5 page manual = 5 document objects
-all_docs = []
+#very accurate PDF parser, extracts text directly from PDF pages (better than MyPDFLoader)
+import fitz
 
 
-#step 2: load the pdfs page by page
 
-#for every pdf file in the folder, PyPDFLoader reads the PDF and returns a list of documents
-for pdf_file in pdf_dir.glob("*.pdf"):
-    loader = PyPDFLoader(str(pdf_file))
-    #each document has .page_content (text) and .metadata (dictionary) attribute 
-    docs = loader.load()
 
-    #attach the source filename to each documents metadata so we know where the text is from
-    for doc in docs:
-        #metadata will be saved with each chunk and returned the vector DB
-        doc.metadata["source"] = pdf_file.name
+#step 1: load and extract the text from the PDF
 
-    #finally you add all the page documents to the list
-    all_docs.extend(docs)
+#get the path to the specific PDF we want to test with
+pdf_dir = Path("data/Franke/20109399_User manual_A1000_en.pdf")
+#open the PDF with PyMuPDF
+doc = fitz.open(pdf_dir)
 
-print("Pages loaded:", len(all_docs))
 
-# step 3: Split text into chunks
+#store extracted text from each page in a list
+pages_text = []
 
-#we create a text splitter that makes chunks of about 400 tokens with a 50 token overlap
-#the overlap helps to avoid cutting sentencees/ideas in half, so the retrieval is more robust
+#loop through every page in the PDF
+for page in doc:
+    #try extracting the text directly (works for PDFs that have selectable text)
+    text = page.get_text()
+    #if the page is an image with no text or just blank
+    if not text.strip():  
+        # convert the page to an image using PyMUPDF
+        pix = page.get_pixmap()
+        image = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+        #run OCR with pytesseract on the image to extract the text in the picture and turn it into a string
+        text = pytesseract.image_to_string(image)
+    #save the text (whether from PDF or OCR)
+    pages_text.append(text)
+
+#turn the pages text into one long string of text
+full_text = "\n".join(pages_text)
+
+
+
+
+# step 2: Split text into chunks
+
+#we create a text splitter that makes chunks of about 500 tokens with a 100 token overlap
+#the overlap helps to avoid cutting sentences/ideas in half, so the retrieval is more robust
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=400,
-    chunk_overlap=50
+    chunk_size=500,
+    chunk_overlap=100   #increased it to make sure context is not lost at the boundaries
 )
 
-#split docs will hold the documents and their metadata, returning a new list of documents aka chunks
-split_docs = text_splitter.split_documents(all_docs)
-#print("Total chunks created:", len(split_docs))
+#apply the splitter to our full pdf text
+chunks = text_splitter.create_documents([full_text])
 
-# step 4: create a chroma vector db and embed the chunks 
+
+
+
+# step 3: create a chroma vector db and embed the chunks (embeddings + store in FAISS)
 
 #we want to create an embedded wrapper that chroma can call which will use the all-MiniLM-L6-v2 model
 #chroma calls this function for each chunk and stores the resulting vectors 
 embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
-#now we build the chroma db for the documents(chunks). this will embed each chunk using the embedded function and
-#store the vectors, text and metadate in a local directory called chroma_db
-vectordb = Chroma.from_documents(
-    documents=split_docs,
-    embedding=embedding_function,
-    persist_directory="chroma_db"
-)
+#FAISS stores all the embeddings so we can quickly search by meaning instead of keywords
+vectordb = FAISS.from_documents(chunks, embedding_function)
 
-#saves DB to disk allowing you to reload it later without having to recompute the embeddings
-vectordb.persist()
 
-#step 5: Test retrieval
+
+
+#step 4: connect ollama for Q&A
+
+#load a local language model through Ollama
+
+#we are using 8B parameter LLaMA 3 model but might switch to a different one
+llm = Ollama(model="llama3.1:8b")
+
+#create a retriever that pulls the top 5 most relevant chunks from FAISS
+retriever = vectordb.as_retriever(search_kwargs={"k":5})
+
+#this will help us debug the chunks for a specified sample query
+results = retriever.get_relevant_documents("Explain the 5-step cleaning method of the A1000")
+for i, r in enumerate(results, 1):
+    print(f"\nChunk {i}")
+    print(r.page_content[:500])  # first 500 chars of each chunk
+
+
+
+
+
+
+
+#step 5: build retrieval QA chain
+
+
+#build a qa that: uses FAISS to find relevant text chunks, passes those chunks to Ollama model, then ollama generates a human-readable answer 
+qa = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
+
+
+
+#step 6; test the pipeline with a query 
 
 #create a query question
-query = "How do I descale Coffee Machine Model X?"
+query = "Explain the 5-step cleaning method of the A1000"
 
-#similarity search runs a semantic search and returns te top k document chunks 
-#each result being a document object with metadata and page content
-results = vectordb.similarity_search(query, k=3)
+#run the query through our RetrievalQA chain
+answer = qa.run(query)
 
-#print the metadate and the first 200 characters of the returned chunk to inspect grounding
-for res in results:
-    print(res.metadata, res.page_content[:200], "...")
-
-
-
-
-#what more needs to be done:
-#1. Run OCR for PDF's that are scanned (images)
+#print the result
+print("Question:", query)
+print("Answer:", answer)
