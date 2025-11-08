@@ -5,6 +5,7 @@ import io
 import json
 import re
 from pathlib import Path
+from VectorDB import VectorDB
 
 
 class FrankePDFProcessor:
@@ -192,7 +193,40 @@ with open(processed_path, 'w', encoding='utf-8') as f:
     json.dump(processed_result, f, indent=2, ensure_ascii=False)
 
 chunked_path = output_dir / "A1000_chunked.json"
+
+print("Saved proccessed and chunked JSON files.")
+
+with open(chunked_path, 'w', encoding='utf-8') as f:
+    chunked_data = json.load()
+    
+docs = []
+
+for chunk in chunked_data['chunks']:
+    docs.append({
+        'text': chunk['text'],
+        'metadata': {
+            'source_file': chunked_data['file_name'],
+            'source_page': chunk['metadata']['source_page'],
+            'chunk_id': chunk['metadata']['chunk_id']
+        }
+    })
+    
+save_dir = "faiss_store"
+if Path(save_dir).exists():
+    print("FAISS store already exists. Updating existing index.")
+    db = VectorDB.load(save_dir=save_dir)
+    db.add_documents(docs)
+    db.save(save_dir=save_dir)
+else:
+    print("Creating new FAISS store.")
+    db = VectorDB()
+    db.add_documents(docs)
+    db.save(save_dir=save_dir)
+    
+print("Vector DB updated and saved.")
+
+"""
 with open(chunked_path, 'w', encoding='utf-8') as f:
     json.dump(chunked_result, f, indent=2, ensure_ascii=False)
 
-print(f"Done")
+print(f"Done")"""

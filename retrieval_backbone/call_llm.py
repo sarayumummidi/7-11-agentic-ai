@@ -4,15 +4,20 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_mistralai import ChatMistralAI
 import os
 from config import MISTRAL_API_KEY
+from VectorDB import VectorDB
 
 os.environ["MISTRAL_API_KEY"] = MISTRAL_API_KEY
 
-with open("A1000_chunked.json", "r", encoding="utf-8") as f:
+# load the FAISS vector DB
+db = VectorDB.load(save_dir="faiss_store")
+
+"""with open("A1000_chunked.json", "r", encoding="utf-8") as f:
     data = json.load(f)
+
 
 all_chunks = [c["text"] for c in data["chunks"]]
 
-context_text = "\n\n".join(all_chunks)
+context_text = "\n\n".join(all_chunks)"""
 
 llm = ChatMistralAI(
     model="mistral-large-latest",
@@ -64,4 +69,9 @@ response = chain.invoke({
     "question": user_question
 })
 
+# debug 
+print("\n--- Retreived Context Answer ---\n")
+print(response.context_text[:1000])
+
+print("\n--- Final Answer ---\n")
 print(response.content)
