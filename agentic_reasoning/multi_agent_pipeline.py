@@ -2,7 +2,7 @@
 This script builds a simple multi-agent pipeline that connects:
 - A Planner Agent which decides what info is needed
 - A Retriever Agent which pulls relevant chunks from FAISS
-3. A Synthesizer Agent that uses the LLM to create the final answer
+- A Synthesizer Agent that uses the LLM to create the final answer
 
 the goal is to handle multi-step or cross-manual queries since we know that we can handle querying one document for information, just building up on that.
 """
