@@ -1,0 +1,12 @@
+#ignore Python cache and environments
+__pycache__/
+*.pyc
+venv/
+
+#ignore data outputs and embeddings
+data/
+faiss_store/
+
+#ignore system files
+.DS_Store
+Thumbs.db

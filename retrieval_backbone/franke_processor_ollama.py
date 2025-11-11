@@ -84,7 +84,7 @@ vectordb = FAISS.from_documents(chunks, embedding_function)
 #load a local language model through Ollama
 
 #we are using 8B parameter LLaMA 3 model but might switch to a different one
-llm = Ollama(model="llama3.1:8b")
+llm = Ollama(model="phi3:3.8b")
 
 #create a retriever that pulls the top 5 most relevant chunks from FAISS
 retriever = vectordb.as_retriever(search_kwargs={"k":5})

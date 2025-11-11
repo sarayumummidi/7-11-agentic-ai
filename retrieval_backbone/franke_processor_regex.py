@@ -181,23 +181,28 @@ class FrankePDFProcessor:
 # Testing from pycharm
 processor = FrankePDFProcessor(target_tokens=400, overlap_tokens=50)
 
-pdf_path = r"C:\Users\Aydin\Projects\Python\BTT\7-11B\data\dataset.pdf" # Change path to test it
+pdf_path = r"C:\Users\hikma\7-11-agentic-ai\data\Franke\20109399_User manual_A1000_en.pdf" # Change path to test it
 processed_result, chunked_result = processor.process_franke_pdf(pdf_path)
 
 # Save both versions (thanks ChatGPT for this part)
-output_dir = Path(r"C:\Users\Aydin\Projects\Python\BTT\7-11B\data")
+output_dir = Path(r"C:\Users\hikma\7-11-agentic-ai\retrieval_backbone")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 processed_path = output_dir / "A1000_processed.json"
+chunked_path = output_dir / "A1000_chunked.json"
+
+# Save both JSON files
 with open(processed_path, 'w', encoding='utf-8') as f:
     json.dump(processed_result, f, indent=2, ensure_ascii=False)
 
-chunked_path = output_dir / "A1000_chunked.json"
-
-print("Saved proccessed and chunked JSON files.")
-
 with open(chunked_path, 'w', encoding='utf-8') as f:
-    chunked_data = json.load()
+    json.dump(chunked_result, f, indent=2, ensure_ascii=False)
+
+print("Saved processed and chunked JSON files.")
+
+# Load the chunked JSON data
+with open(chunked_path, 'r', encoding='utf-8') as f:
+    chunked_data = json.load(f)
     
 docs = []
 
