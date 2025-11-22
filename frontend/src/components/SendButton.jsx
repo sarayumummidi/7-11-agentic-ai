@@ -4,7 +4,7 @@ const SendButton = ({ text, onResponse }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] useState(null);
 
-  const handleClick = asynch() => {
+  const handleClick = async() => {
     if (!text.trim() || loading) return;
     setError(null);
     setLoading(true);
