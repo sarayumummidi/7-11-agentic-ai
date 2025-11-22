@@ -34,7 +34,7 @@ const SendButton = ({ text, onResponse }) => {
         onClick={handleClick}
         disabled={!text.trim() || loading}
         style={{
-          background: "___________________",
+          background: "#a34c46",
           color: "white",
           border: "none",
           borderRadius: "10px",
