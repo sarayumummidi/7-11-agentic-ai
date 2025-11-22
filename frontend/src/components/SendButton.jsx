@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const SendButton = ({ text, onResponse }) => {
   const [loading, setLoading] = useState(false);
-  const [error, falseError] useState(null);
+  const [error, setError] useState(null);
 
   const handleClick = asynch() => {
     if (!text.trim() || loading) return;
