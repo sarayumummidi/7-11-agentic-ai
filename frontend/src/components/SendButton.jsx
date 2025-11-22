@@ -12,7 +12,7 @@ const SendButton = ({ text, onResponse }) => {
     try {
       const res = await fetch("/ask", {
         method: "POST",
-        headers: { "Content-Type": "application/json" ),
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: text }),
    });
 
@@ -49,7 +49,7 @@ const SendButton = ({ text, onResponse }) => {
       {error && (
          <div style={{ color: "red", fontSize: "12px", marginTop: "4px" }}>{error}</div>
       }}
-    </div>div>
+    </div>
   );
 };
   
