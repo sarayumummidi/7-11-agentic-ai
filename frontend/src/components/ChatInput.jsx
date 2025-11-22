@@ -52,7 +52,7 @@ const ChatInput = ({ onSend }) => {
         color: "white",
         border: "none",
         borderRadius: "10px",
-        padding: "0 20px",
+        padding: "10px",
         fontWeight: "600",
         cursor: "pointer",
         opacity: text.trim() ? 1 : 0.5,
