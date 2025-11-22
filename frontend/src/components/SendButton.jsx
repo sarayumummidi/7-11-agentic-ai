@@ -21,7 +21,7 @@ const SendButton = ({ text, onResponse }) => {
 
       onResponse?.(data);
     } catch (err) {
-      setError("Error");
+      setError("Error Sending Message");
       console.error(err);
     } finally {
       setLoading(false);
@@ -44,7 +44,7 @@ const SendButton = ({ text, onResponse }) => {
           opacity: loading ? 0.6 : 1,
         }}
       >
-        {loading ? "Response in progress..." : "Send"}
+        {loading ? "Send Message." : "Send"}
       </button>
       {error && (
          <div style={{ color: "red", fontSize: "12px", marginTop: "4px" }}>{error}</div>
