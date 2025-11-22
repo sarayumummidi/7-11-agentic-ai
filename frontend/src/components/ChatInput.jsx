@@ -26,14 +26,14 @@ const ChatInput = ({ onSend }) => {
         display: "flex",
         gap: "8px",
         padding: "12px",
-        borderTop: "1px solid # ddd",
+        borderTop: "1px solid #ddd",
     }}
   >
     <textarea
       rows={1}
       value={text}
       onChange={(e) => setText(e.target.value)}
-      okKeyDown={handleKeyDown}
+      onKeyDown={handleKeyDown}
       placeholder="Type a message..."
       style={{
         flex: 1,
