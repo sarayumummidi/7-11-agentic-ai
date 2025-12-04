@@ -1,57 +1,12 @@
-import React, { useState } from "react";
+import React from 'react'
+import { LuSendHorizontal } from 'react-icons/lu'
 
-const SendButton = ({ text, onResponse }) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const handleClick = async() => {
-    if (!text.trim() || loading) return;
-    setError(null);
-    setLoading(true);
-
-    try {
-      const res = await fetch("/ask", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question: text }),
-   });
-
-  if (!res.ok) throw new Error("Network error");
-      const data = await res.json();
-
-      onResponse?.(data);
-    } catch (err) {
-      setError("Error Sending Message");
-      console.error(err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
+const SendButton = ({ disabled, onClick }) => {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <button 
-        onClick={handleClick}
-        disabled={!text.trim() || loading}
-        style={{
-          background: "#a34c46",
-          color: "white",
-          border: "none",
-          borderRadius: "10px",
-          padding: "8px 20px",
-          fontWeight: "600",
-          cursor: "pointer",
-          opacity: loading ? 0.6 : 1,
-        }}
-      >
-        {loading ? "Send Message." : "Send"}
-      </button>
-      {error && (
-         <div style={{ color: "red", fontSize: "12px", marginTop: "4px" }}>{error}</div>
-      )}
-    </div>
-  );
-};
-  
-export default SendButton;
-      
+    <button onClick={onClick} disabled={disabled} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+      <LuSendHorizontal size={25} color='rgba(84, 86, 84, 0.86)' display = 'flex' alignItems='center' justifyContent='center' />
+    </button>
+  )
+}
+
+export default SendButton

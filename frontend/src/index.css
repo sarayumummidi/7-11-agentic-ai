@@ -1,11 +1,10 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', 'Segoe UI', sans-serif, 'Tangerine';
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -52,6 +51,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.tangerine-regular {
+  font-family: 'Tangerine', cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: light) {

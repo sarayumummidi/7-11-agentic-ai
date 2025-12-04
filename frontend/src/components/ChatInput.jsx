@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import SendButton from './SendButton'
 
 const ChatInput = ({ onSend }) => {
   const [text, setText] = useState('')
@@ -24,9 +25,9 @@ const ChatInput = ({ onSend }) => {
     <div
       style={{
         display: 'flex',
-        gap: '8px',
+        gap: '4px',
         padding: '12px',
-        borderTop: '1px solid #ddd',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
       }}
     >
       <textarea
@@ -40,30 +41,16 @@ const ChatInput = ({ onSend }) => {
           padding: '8px',
           borderRadius: '8px',
           border: '1px solid rgba(255, 255, 255, 0.3)',
-          backgroundColor: 'rgba(255, 255, 255, 0.5)',
+          backgroundColor: 'rgba(255, 255, 255, 0.45)',
           backdropFilter: 'blur(10px) saturate(180%)',
-          resize: 'none',
           fontSize: '15px',
+          resize: 'none',
           color: '#333',
+          fontFamily: 'Manrope, "Segoe UI", sans-serif',
           outline: 'none',
         }}
       />
-      <button
-        onClick={handleSend}
-        disabled={!text.trim()}
-        style={{
-          background: 'rgba(34, 111, 9, 0.76)',
-          color: 'white',
-          border: 'none',
-          borderRadius: '10px',
-          padding: '10px',
-          fontWeight: '600',
-          cursor: 'pointer',
-          opacity: text.trim() ? 1 : 0.5,
-        }}
-      >
-        Send
-      </button>
+      <SendButton disabled={!text.trim()} onClick={handleSend} />
     </div>
   )
 }

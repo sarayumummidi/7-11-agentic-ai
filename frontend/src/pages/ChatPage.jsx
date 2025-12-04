@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import ChatInput from '../components/ChatInput'
 import MessageBubble from '../components/MessageBubble'
+import logo from '../assets/7-11logo.png'
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([
@@ -46,7 +47,8 @@ const ChatPage = () => {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      fontFamily: 'sans-serif',
+      fontFamily:
+        'Manrope, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
       position: 'relative',
       overflow: 'hidden',
       backgroundColor: 'transparent',
@@ -59,9 +61,11 @@ const ChatPage = () => {
       bottom: 0,
       width: '100%',
       height: '100%',
-      backgroundColor: '#ffffff',
+      backgroundColor: 'rgba(255, 255, 255, 0.5)',
       background:
-        'radial-gradient(circle at 50% 87%, #f2b0b0 0px, transparent 50%), radial-gradient(circle at 32% 42%, #d9f2ba 0px, transparent 50%), radial-gradient(circle at 70% 41%, #ffc085 0px, transparent 50%), #ffffff',
+        'radial-gradient(circle at 42% 80%, #f2b0b0 0px, transparent 40%), radial-gradient(circle at 62% 81%, #ffc085 0px, transparent 40%),rgb(255, 255, 255)',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
       zIndex: -1,
     },
 
@@ -73,20 +77,18 @@ const ChatPage = () => {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      gap: '10px',
       zIndex: 1,
     },
     titleContainer: {
       fontSize: '32px',
       fontWeight: '900',
+      paddingBottom: '0px',
       letterSpacing: '-0.5px',
       color: '#333',
       textShadow: '0 2px 10px rgba(255,255,255,0.5)',
     },
-    textOrange: { color: '#F58220' },
-    textGreen: { color: '#008060' },
-
     stripeBar: {
+      paddingTop: '0px',
       display: 'flex',
       width: '80px',
       height: '8px',
@@ -97,6 +99,13 @@ const ChatPage = () => {
     stripeOrange: { flex: 1, backgroundColor: '#F58220' },
     stripeGreen: { flex: 1, backgroundColor: '#008060' },
     stripeRed: { flex: 1, backgroundColor: '#EE1C25' },
+    logo: {
+      height: '42px',
+      marginLeft: '8px',
+      paddingBottom: '4px',
+      display: 'inline-block',
+      verticalAlign: 'middle',
+    },
 
     // --- CHAT AREA ---
     chatArea: {
@@ -131,20 +140,20 @@ const ChatPage = () => {
     },
     bubble: (isUser) => ({
       padding: '18px 26px',
-      borderRadius: '24px',
+      borderRadius: '10px',
       fontSize: '16px',
       maxWidth: '70%',
       lineHeight: '1.5',
       // User = White with subtle shadow, AI = Glassmorphism
       backgroundColor: isUser
-        ? 'rgba(255, 255, 255, 0.95)'
-        : 'rgba(255, 255, 255, 0.25)',
+        ? 'rgba(246, 245, 245, 0.56)'
+        : 'rgba(155, 155, 155, 0.08)',
       border: isUser
-        ? '1px solid rgba(0, 0, 0, 0.05)'
-        : '1px solid rgba(255, 255, 255, 0.3)',
+        ? '1px solid rgba(224, 221, 221, 0.83)'
+        : '1px solid rgba(255, 255, 255, 0.86)',
       boxShadow: isUser
         ? '0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05)'
-        : '0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.4)',
+        : '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.4)',
       color: '#333',
       backdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
       WebkitBackdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
@@ -162,8 +171,8 @@ const ChatPage = () => {
       backgroundColor: 'rgba(255, 255, 255, 0.9)',
       backdropFilter: 'blur(20px) saturate(180%)',
       WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-      border: '1px solid rgba(255, 255, 255, 0.3)',
-      borderRadius: '20px',
+      border: '1px solid rgba(175, 175, 175, 0.63)',
+      borderRadius: '10px',
       boxShadow:
         '0 10px 40px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5)',
       overflow: 'hidden',
@@ -176,9 +185,9 @@ const ChatPage = () => {
       <div style={styles.gradientBackground} />
 
       <header style={styles.header}>
-        <div style={styles.titleContainer}>
-          Ask <span style={styles.textOrange}>7</span>-
-          <span style={styles.textGreen}>ELEVEN</span> AI
+        <div style={styles.titleContainer} className="tangerine-regular">
+          <span style={{ fontWeight: 700 }}>ask</span>
+          <img src={logo} alt="7-11 logo" style={styles.logo} />
         </div>
         <div style={styles.stripeBar}>
           <div style={styles.stripeOrange} />
