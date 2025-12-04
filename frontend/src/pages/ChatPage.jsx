@@ -113,47 +113,6 @@ const ChatPage = () => {
       msOverflowStyle: 'none',
     },
 
-    // --- MESSAGE STYLES (UPDATED) ---
-    messageWrapper: (isUser) => ({
-      display: 'flex',
-      flexDirection: 'column',
-      // SWAPPED: User aligns flex-end (Right), AI aligns flex-start (Left)
-      alignItems: isUser ? 'flex-end' : 'flex-start',
-    }),
-    label: {
-      fontSize: '12px',
-      fontWeight: 'bold',
-      color: '#888',
-      marginBottom: '6px',
-      marginLeft: '12px',
-      marginRight: '12px',
-      textTransform: 'uppercase',
-    },
-    bubble: (isUser) => ({
-      padding: '18px 26px',
-      borderRadius: '24px',
-      fontSize: '16px',
-      maxWidth: '70%',
-      lineHeight: '1.5',
-      // User = White with subtle shadow, AI = Glassmorphism
-      backgroundColor: isUser
-        ? 'rgba(255, 255, 255, 0.95)'
-        : 'rgba(255, 255, 255, 0.25)',
-      border: isUser
-        ? '1px solid rgba(0, 0, 0, 0.05)'
-        : '1px solid rgba(255, 255, 255, 0.3)',
-      boxShadow: isUser
-        ? '0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05)'
-        : '0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.4)',
-      color: '#333',
-      backdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
-      WebkitBackdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
-      // Add a little "tail" visual direction
-      borderBottomRightRadius: isUser ? '4px' : '24px',
-      borderBottomLeftRadius: isUser ? '24px' : '4px',
-      transition: 'all 0.3s ease',
-    }),
-
     // --- INPUT AREA ---
     floatingInputContainer: {
       width: '90%',
@@ -189,10 +148,12 @@ const ChatPage = () => {
 
       <div style={styles.chatArea}>
         {messages.map((msg) => (
-          <div key={msg.id} style={styles.messageWrapper(msg.isUser)}>
-            <span style={styles.label}>{msg.isUser ? 'ME' : 'OUR AI'}</span>
-            <div style={styles.bubble(msg.isUser)}>{msg.text}</div>
-          </div>
+          <MessageBubble
+            key={msg.id}
+            text={msg.text}
+            isUser={msg.isUser}
+            label={msg.isUser ? 'ME' : 'OUR AI'}
+          />
         ))}
         <div ref={messagesEndRef} />
       </div>
