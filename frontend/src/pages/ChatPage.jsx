@@ -121,7 +121,6 @@ const ChatPage = () => {
       scrollbarWidth: 'none',
       msOverflowStyle: 'none',
     },
-
     // --- MESSAGE STYLES (UPDATED) ---
     messageWrapper: (isUser) => ({
       display: 'flex',
@@ -198,10 +197,12 @@ const ChatPage = () => {
 
       <div style={styles.chatArea}>
         {messages.map((msg) => (
-          <div key={msg.id} style={styles.messageWrapper(msg.isUser)}>
-            <span style={styles.label}>{msg.isUser ? 'ME' : 'OUR AI'}</span>
-            <div style={styles.bubble(msg.isUser)}>{msg.text}</div>
-          </div>
+          <MessageBubble
+            key={msg.id}
+            text={msg.text}
+            isUser={msg.isUser}
+            label={msg.isUser ? 'ME' : 'OUR AI'}
+          />
         ))}
         <div ref={messagesEndRef} />
       </div>
