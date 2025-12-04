@@ -23,20 +23,44 @@ const ChatPage = () => {
     scrollToBottom()
   }, [messages])
 
-  const handleSendMessage = (text) => {
+  const handleSendMessage = async (text) => {
     // Add User Message
     const userMessage = { id: Date.now(), text, isUser: true }
     setMessages((prev) => [...prev, userMessage])
 
-    // Simulate AI Response (Placeholder until your backend is connected)
-    setTimeout(() => {
-      const aiMessage = {
-        id: Date.now() + 1,
-        text: "I'm checking on that for you...",
-        isUser: false,
-      }
-      setMessages((prev) => [...prev, aiMessage])
-    }, 1000)
+    // Show AI thinking while calling to backend
+    const tempId = Date.now() + 1
+    const thinkingMessage = { id: tempId, text: "Thinking...", isUser: false }
+    setMessages((prev) => [...prev, thinkingMessage])
+
+    // set VITE_API_BASE to backend URL in .env file or just default to empty string
+    const API_BASE = import.meta.env.VITE_API_BASE || ''
+
+    //trying to send request
+    try {
+      const res = await fetch(`${API_BASE}/ask`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: text }),
+      })
+
+      //check if error response
+      if (!res.ok) throw new Error(`Error: ${res.status}`)
+
+      // parse response from backend
+      const data = await res.json()
+
+      // different response field names handling from different models
+      const replyText =
+        data.answer || data.response || data.content || data.text || JSON.stringify(data)
+
+      // replace temporary thinking message with response
+      setMessages((prev) => prev.map((m) => (m.id === tempId ? { ...m, text: replyText } : m)))
+    } catch (err) {
+      console.error('Error fetching AI response', err)
+      const errText = 'Sorry — something went wrong. Please try again.'
+      setMessages((prev) => prev.map((m) => (m.id === tempId ? { ...m, text: errText } : m)))
+    }
   }
 
   const styles = {
