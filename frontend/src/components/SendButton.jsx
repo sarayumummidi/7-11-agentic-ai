@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const SendButton = ({ text, onResponse }) => {
   const [loading, setLoading] = useState(false);
-  const [error, setError] useState(null);
+  const [error, setError] = useState(null);
 
   const handleClick = async() => {
     if (!text.trim() || loading) return;
@@ -28,7 +28,7 @@ const SendButton = ({ text, onResponse }) => {
     }
   };
 
-  return { 
+  return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <button 
         onClick={handleClick}
@@ -48,7 +48,7 @@ const SendButton = ({ text, onResponse }) => {
       </button>
       {error && (
          <div style={{ color: "red", fontSize: "12px", marginTop: "4px" }}>{error}</div>
-      }}
+      )}
     </div>
   );
 };
