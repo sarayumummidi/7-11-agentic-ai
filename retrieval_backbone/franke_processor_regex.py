@@ -177,61 +177,62 @@ class FrankePDFProcessor:
 
         return content, chunked_data
 
+if __name__ == "__main__":
+    # Testing from pycharm
+    processor = FrankePDFProcessor(target_tokens=400, overlap_tokens=50)
 
-# Testing from pycharm
-processor = FrankePDFProcessor(target_tokens=400, overlap_tokens=50)
+    pdf_path = r"C:\Users\hikma\7-11-agentic-ai\data\Franke\20109399_User manual_A1000_en.pdf" # Change path to test it
+    processed_result, chunked_result = processor.process_franke_pdf(pdf_path)
 
-pdf_path = r"C:\Users\hikma\7-11-agentic-ai\data\Franke\20109399_User manual_A1000_en.pdf" # Change path to test it
-processed_result, chunked_result = processor.process_franke_pdf(pdf_path)
+    # Save both versions (thanks ChatGPT for this part)
+    output_dir = Path(r"C:\Users\hikma\7-11-agentic-ai\retrieval_backbone")
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-# Save both versions (thanks ChatGPT for this part)
-output_dir = Path(r"C:\Users\hikma\7-11-agentic-ai\retrieval_backbone")
-output_dir.mkdir(parents=True, exist_ok=True)
+    processed_path = output_dir / "A1000_processed.json"
+    chunked_path = output_dir / "A1000_chunked.json"
 
-processed_path = output_dir / "A1000_processed.json"
-chunked_path = output_dir / "A1000_chunked.json"
+    # Save both JSON files
+    with open(processed_path, 'w', encoding='utf-8') as f:
+        json.dump(processed_result, f, indent=2, ensure_ascii=False)
 
-# Save both JSON files
-with open(processed_path, 'w', encoding='utf-8') as f:
-    json.dump(processed_result, f, indent=2, ensure_ascii=False)
+    with open(chunked_path, 'w', encoding='utf-8') as f:
+        json.dump(chunked_result, f, indent=2, ensure_ascii=False)
 
-with open(chunked_path, 'w', encoding='utf-8') as f:
+    print("Saved processed and chunked JSON files.")
+
+    # Load the chunked JSON data
+    with open(chunked_path, 'r', encoding='utf-8') as f:
+        chunked_data = json.load(f)
+    
+    docs = []
+
+    for chunk in chunked_data['chunks']:
+        docs.append({
+            'text': chunk['text'],
+            'metadata': {
+                'source_file': chunked_data['file_name'],
+                'source_page': chunk['metadata']['source_page'],
+                'chunk_id': chunk['metadata']['chunk_id']
+            }
+        })
+    
+    save_dir = "faiss_store"
+    if Path(save_dir).exists():
+        print("FAISS store already exists. Updating existing index.")
+        db = VectorDB.load(save_dir=save_dir)
+        db.add_documents(docs)
+        db.save(save_dir=save_dir)
+    else:
+        print("Creating new FAISS store.")
+        db = VectorDB()
+        db.add_documents(docs)
+        db.save(save_dir=save_dir)
+    
+    print("Vector DB updated and saved.")
+
+    """
+    with open(chunked_path, 'w', encoding='utf-8') as f:
     json.dump(chunked_result, f, indent=2, ensure_ascii=False)
 
-print("Saved processed and chunked JSON files.")
-
-# Load the chunked JSON data
-with open(chunked_path, 'r', encoding='utf-8') as f:
-    chunked_data = json.load(f)
-    
-docs = []
-
-for chunk in chunked_data['chunks']:
-    docs.append({
-        'text': chunk['text'],
-        'metadata': {
-            'source_file': chunked_data['file_name'],
-            'source_page': chunk['metadata']['source_page'],
-            'chunk_id': chunk['metadata']['chunk_id']
-        }
-    })
-    
-save_dir = "faiss_store"
-if Path(save_dir).exists():
-    print("FAISS store already exists. Updating existing index.")
-    db = VectorDB.load(save_dir=save_dir)
-    db.add_documents(docs)
-    db.save(save_dir=save_dir)
-else:
-    print("Creating new FAISS store.")
-    db = VectorDB()
-    db.add_documents(docs)
-    db.save(save_dir=save_dir)
-    
-print("Vector DB updated and saved.")
-
-"""
-with open(chunked_path, 'w', encoding='utf-8') as f:
-    json.dump(chunked_result, f, indent=2, ensure_ascii=False)
-
-print(f"Done")"""
+    print(f"Done")
+    """
