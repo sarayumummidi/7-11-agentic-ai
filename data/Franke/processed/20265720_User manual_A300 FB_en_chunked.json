@@ -1,0 +1,588 @@
+{
+  "file_name": "20265720_User manual_A300 FB_en.pdf",
+  "total_pages": 72,
+  "total_chunks": 72,
+  "chunks": [
+    {
+      "text": "USER MANUAL A300 FB FCS4070 en Read the user manual before working on the machine. Keep the manual with the machine and pass the manual on to the next operator if the machine is sold or transferred to a third party.",
+      "token_count": 30,
+      "metadata": {
+        "source_page": 1,
+        "chunk_id": 0
+      }
+    },
+    {
+      "text": "ABOUT THE MOMENT Discover more at us.coffee.franke.com",
+      "token_count": 5,
+      "metadata": {
+        "source_page": 2,
+        "chunk_id": 1
+      }
+    },
+    {
+      "text": "Table of contents User manual A300 FB iii TABLE OF CONTENTS 1 For your safety  6 1.1 Intended use  6 1.2 Prerequisites for using the coffee machine  6 1.3 Explanation of safety instructions  7 1.4 Safety concerns when using the coffee machine  7 2 Explanation of symbols  11 2.1 Symbols used in the manual  11 2.2 Symbols used in the software  11 3 Scope of delivery  15 4 Identification  16 4.1 Position of type plates  16 4.2 Type code  17 5 Description of machine  18 5.1 Coffee machine  18 5.2 Add-on units  19 5.3 Overview of operating modes  19 5.4 Franke Digital Services (option)  21 6 Installation  22 6.1 Preparations  22 6.2 Dimensions  23 6.3 Requirements of the water supply  25 6.4 Connecting the wastewater  28 6.5 Switching the machine on  28 7 Switching on the machine for the first time  29 7.1 Fill resources  30 7.2 Inserting a descaling cartridge  30 8 Filling and emptying  32 8.1 filling the machine  32 8.2 Filling beans  32 8.3 Using and storing roasted coffee beans  33 8.4 Filling powder  33 8.5 Filling the water tank  34 8.6 Setting the grind coarseness  35 8.7 Emptying the powder hopper  35 8.8 Emptying the grounds container  36 8.9 Empty the drip tray",
+      "token_count": 155,
+      "metadata": {
+        "source_page": 3,
+        "chunk_id": 2
+      }
+    },
+    {
+      "text": "Table of contents iv User manual A300 FB 9 Preparing beverages  38 9.1 Preparing beverages using the individual operating mode  38 9.2 Preparing beverages with Cash Register  38 9.3 Preparing hot water  39 10 Cleaning  40 10.1 Introduction  40 10.2 Required cleaning accessories  40 10.3 5-step method  40 10.4 Starting the cleaning process  40 10.5 Loosen bean hopper finger guard for cleaning  41 10.6 Weekly cleaning  42 10.7 Rinsing the coffee machine  44 10.8 Care kit  45 11 Descaling  47 11.1 Descaling due date  47 11.2 Descaling  47 12 Configuration  49 12.1 Calling up the maintenance level  49 12.2 PIN codes  49 12.3 Input methods  49 12.4 My settings  50 13 Individualization and data transfer  55 13.1 Overview  55 13.2 Multimedia functions  55 13.3 Manage Digital Signage via USB stick  55 13.4 Configure application  56 13.5 Loading/backing up data  58 13.6 Set default values  59 13.7 Activating configurations  59 14 Troubleshooting  60 14.1 Error messages  60 14.2 Troubleshooting the system  61 14.3 Tips for good coffee beverages  62 14.4 Help with problems concerning product quality  63 15 Decommissioning  64 15.1 Preparing for decommissioning  64 15.2 Back up data  64 15.3 Short-term decommissioning (up to 3 weeks)  64 15.4 Long-term decommissioning",
+      "token_count": 150,
+      "metadata": {
+        "source_page": 4,
+        "chunk_id": 3
+      }
+    },
+    {
+      "text": "Table of contents User manual A300 FB v 15.5 Transport and storage  65 15.6 Recommissioning after prolonged periods of storage or non-use  65 16 Disposal of parts  66 17 Technical data  67 17.1 Electrical connection data  67 Stichwortverzeichnis",
+      "token_count": 28,
+      "metadata": {
+        "source_page": 5,
+        "chunk_id": 4
+      }
+    },
+    {
+      "text": "| For your safety 6 User manual A300 FB 1 FOR YOUR SAFETY 1.1 Intended use 1.1.1 Coffee machine – The A300 FB is a commercial machine for preparing beverages and is intended for use in food ser- vices, offices and other similar environments. – The A300 FB is designed to process whole coffee beans and chocolate powder that is suitable for au- tomatic machines. – The A300 FB is intended for the preparation of beverages in accordance with these instructions and the technical data. – The A300 FB is intended for operation indoors. Please note – The A300 FB is not suitable for use outdoors. 1.1.2 Add-on units Cup warmer – The cup warmer is intended only for preheating coffee cups and glasses used when preparing drinks. Please note – Drinking containers made of paper or plastic must not be used. The cup warmer is not designed to dry dish towels or other cloths. It is not necessary to cover the cups to warm them. Accounting system – Depending on the version, the accounting system can be used for various methods of payment. Exam- ples: Payment with coins, cards, or mobile payment systems. 1.2 Prerequisites for using the coffee machine – The A300 FB is intended for use by trained personnel or as a self-service machine. – Self-service machines must always be monitored to protect the users. – Each operator of the A300 FB must have read and understood the manual. This does not apply to its use in the self-service area. – Do not operate the A300 FB or add-on units until you have completely read and understood this man- ual. – Do not use the A300 FB or add-on units if you are not familiar with the various functions. – Do not use the A300 FB if the connection lines of the A300 FB or the add-on units are damaged. – Do not use the A300 FB unless the A300 FB or the add-on units have been cleaned or filled as in- tended. – Children under the age of 8 are not permitted to use the A300 FB and the add-on units. – This appliance can be used by children aged from 8 years and above and persons with reduced physi- cal, sensory or mental capabilities or lack of experience and knowledge if they have been given super- vision or instruction concerning use of the appliance in a safe way and understand the hazards in- volved. Children shall not play with the appliance. Cleaning and user maintenance shall not be made by children without supervision.",
+      "token_count": 313,
+      "metadata": {
+        "source_page": 6,
+        "chunk_id": 5
+      }
+    },
+    {
+      "text": "For your safety | 1 User manual A300 FB 7 – Children or persons with restricted physical, sensory or mental abilities, or lack of experience and knowledge, may only use the A300 FB and the add-on units under supervision or after adequate in- struction by a person responsible for their safety; they are not permitted to play with the A300 FB and the add-on units. – Children are not permitted to clean the A300 FB and the add-on units. 1.3 Explanation of safety instructions To ensure personal safety and the protection of material goods, observation of these safety instructions is imperative. Symbol and signal word indicate the severity of the hazard. WARNING WARNING indicates a potential danger. DANGER indicates an imminent danger which, if not avoided, will result in death or serious injury. CAUTION CAUTION indicates a hazardous situation which, if not avoided, could result in minor or moderate injury. NOTICE NOTICE directs your attention to the risk of damage to machinery. 1.4 Safety concerns when using the coffee machine WARNING Risk of fire If the power cord is electrically overloaded, the heat generated can cause a fire. a) Never use power outlet strips, multi-sockets or extension cords to connect the coffee machine to the power supply. WARNING Risk of fatal injury from electrocution Damaged power cords, pipes or plugs can lead to electrocution. a) Do not connect any damaged power cords, pipes or plugs to the power grid. b) Replace damaged power cords, pipes or plugs. If the power cord is permanently assembled, contact the service technician. If the power cord is not permanently assembled, order and use a new, original power cord. c) Ensure that the machine/appliance and the power cord are not near any hot surfaces such as gas or electric stoves or ovens. d) Ensure that the power cord is not pinched and does not chafe on sharp edges. e) Only pull on the plug and not on the cable when disconnecting the device from the power grid.",
+      "token_count": 243,
+      "metadata": {
+        "source_page": 7,
+        "chunk_id": 6
+      }
+    },
+    {
+      "text": "| For your safety 8 User manual A300 FB WARNING Risk of fatal injury from electrocution Liquid/moisture entering the machine or leaks can lead to electrocution. a) Never point a liquid or steam jet at the machine. b) Do not pour any liquids on the machine. c) Do not immerse the machine in liquid. d) Disconnect the machine from the power supply in the event of a leak or if liquid/moisture enters the machine. WARNING Risk of fatal injury from electrocution Work, repairs or servicing improperly performed on electrical systems can lead to electrocution. a) Have repairs on electrical parts carried out by service technicians using original spare parts. b) Have servicing carried out by authorized persons with corresponding qualification only. WARNING Danger of suffocation Plastic packaging materials could cause children to suffocate. a) Ensure that children have no access to plastic packaging materials. WARNING Risk of scalding Hot water is released during rinsing. a) Keep hands away from the spouts and nozzles during this process. b) Do not place anything on the drip grid. c) IN CASE OF SCALDING: Immediately cool the affected area and, depending on the severity of the in- jury, consult a doctor. WARNING Risk of scalding Hot beverages can lead to scalding. a) Always be careful with hot beverages. b) Use only suitable drinking vessels. WARNING Risk of scalding Hot liquids and steam escape during cleaning and can lead to scalding. a) Keep hands away from the spouts and nozzles during this process.",
+      "token_count": 181,
+      "metadata": {
+        "source_page": 8,
+        "chunk_id": 7
+      }
+    },
+    {
+      "text": "For your safety | 1 User manual A300 FB 9 WARNING Risk of injury If objects find their way into the bean hopper or grinder, splinters may be ejected, leading to injury. a) Never insert any objects into the bean hopper or grinder. CAUTION Cutting injuries/crushing The powder hoppers worm gear mechanism can cause cuts or crushing injuries. a) Exercise care when cleaning the powder hopper. CAUTION Irritation from cleaners Cleaning tablets, milk system cleaning agent, and descaler can lead to irritation of the skin or eyes. a) Observe the hazard warnings on the label of the respective cleaner. b) Avoid contact with your eyes and skin. c) Wash your hands after coming into contact with cleaning supplies. d) Cleaning supplies must be kept away from beverages. CAUTION Health hazard due to germ formation Inadequate cleaning can result in food residues accumulating in the machine and at the spouts, thereby contaminating products. a) Do not use the machine unless it has been cleaned according to the instructions. b) Clean the machine daily in accordance with the instructions. c) Inform operating personnel of the necessary cleaning measures. CAUTION Health hazard due to germ formation Residues may build up in the machine if not used for a long time. a) Clean the machine if it is not used for extended periods (more than 2 days). CAUTION Formation of mold Mold can form on the coffee grounds. a) Empty and clean the grounds container at least once a day.",
+      "token_count": 179,
+      "metadata": {
+        "source_page": 9,
+        "chunk_id": 8
+      }
+    },
+    {
+      "text": "| For your safety 10 User manual A300 FB NOTICE Machine damage caused by limescale build-up If the water hardness is set incorrectly, limescale can build up in the coffee machine. Limescale deposits may damage the coffee machine. a) Measure the water hardness during commissioning. Then set the water hardness in the Commissioning menu on the basis of the measurement. Determining water hardness using measuring strips To descale the machine, only use the descaler concentrate from Franke (item number 560.0589.837). This guarantees reliable descaling results. a) Make sure that you order descaler concentrate in good time so that you can descale the coffee ma- chine immediately when the prompt appears on the coffee machine operator panel.",
+      "token_count": 85,
+      "metadata": {
+        "source_page": 10,
+        "chunk_id": 9
+      }
+    },
+    {
+      "text": "Explanation of symbols | 2 User manual A300 FB 11 2 EXPLANATION OF SYMBOLS 2.1 Symbols used in the manual 2.1.1 Orientation Symbol Description Clean components using the 5-step method. This symbol indicates tips, tricks and additional information Prerequisites for additional steps Finely ground Coarsely ground Information to optimize the quality of the beverages Result or intermediate result for additional steps Bean hopper Powder hopper Filling the water tank Empty the grounds container 2.2 Symbols used in the software 2.2.1 Symbols used for navigation and operation Symbol Designation Description Cancel button Cancel preparation",
+      "token_count": 69,
+      "metadata": {
+        "source_page": 11,
+        "chunk_id": 10
+      }
+    },
+    {
+      "text": "| Explanation of symbols 12 User manual A300 FB Symbol Designation Description Select next/previous page Scroll through menus with multiple pages Start button Start preparation 2.2.2 Symbols on the dashboard and on the user interface If an error occurs, a symbol that represents the affected component will light up on the dashboard. For more information, see the Troubleshooting [} 60] chapter. Symbol Designation Description Franke logo Call up the maintenance level Ground coffee Energy-saving mode Switch the machine into energy-saving mode Servicing/cleaning Machine must be cleaned and/or serviced Rinse Machine must be rinsed or machine is rinsing Descaling Descaling the coffee machine Water filter Grounds container Grounds container must be emptied Drip tray Drip tray is full or not installed correctly Door The door is open Water tank Water tank is empty or missing Payment Payment active Service/configuration/ administration",
+      "token_count": 103,
+      "metadata": {
+        "source_page": 12,
+        "chunk_id": 11
+      }
+    },
+    {
+      "text": "Explanation of symbols | 2 User manual A300 FB 13 Symbol Designation Description Beverage settings Language Set language Edit Edit settings Individualization Customize beverages and display Advertising images Set machine Product Access rights Manage user permissions Coffee bean Bean hopper is empty or not installed correctly Powder resource Powder hopper is empty or not installed correctly Resource settings Set resources System information Counter Individual products counter Inactive Data transfer Data is being transferred",
+      "token_count": 54,
+      "metadata": {
+        "source_page": 13,
+        "chunk_id": 12
+      }
+    },
+    {
+      "text": "| Explanation of symbols 14 User manual A300 FB 2.2.3 Depiction of error messages Highlighted products cannot be prepared. The illu- minated symbol on the dashboard takes you to the error message. Door open The door is open. Please close the door. If the entire system is affected by an error, the error message will appear automatically. Color code for error messages Temporary interruption System still fully functional System has limited functionality Some or all resources are locked",
+      "token_count": 56,
+      "metadata": {
+        "source_page": 14,
+        "chunk_id": 13
+      }
+    },
+    {
+      "text": "Scope of delivery | 3 User manual A300 FB 15 3 SCOPE OF DELIVERY Item description Item number Coffee machine A300 FB (FCS4070) Manual set 560.0724.364 Descaler concentrate 560.0589.837 Cleaning tablets (USA/Canada) 567.0000.002 Water hardness test strip 560.0004.060 Cleaning brushes 560.0003.728 Paint brush 560.0003.716 Microfiber cloth 560.0002.315 Collecting container 560.0612.966 Single milk spout See enclosed mounting instructions 560.0613.",
+      "token_count": 43,
+      "metadata": {
+        "source_page": 15,
+        "chunk_id": 14
+      }
+    },
+    {
+      "text": "| Identification 16 User manual A300 FB 4 IDENTIFICATION 4.1 Position of type plates 4.1.1 Coffee machine The type plate for the coffee machine is located on the right interior wall. 4.1.2 CW (option) The type plate for the cup warmer is located in the interior on the rear panel. 4.1.3 AC125 CL (option) The type plate of the AC125 CL is located on the right-hand inner side.",
+      "token_count": 50,
+      "metadata": {
+        "source_page": 16,
+        "chunk_id": 15
+      }
+    },
+    {
+      "text": "Identification | 4 User manual A300 FB 17 4.2 Type code 4.2.1 Coffee machine Type code Description A300 Coffee machine (fully automatic) Series: A Overall size: 300 1G 1 grinder 2G 2 grinders 1P 1 powder dosing unit 2P 2 powder dosing units FB Fresh Brew (greater spout height, hot water spout from central spout) W3 Internal water tank W4 Main water connection 4.2.2 Add-on units Type code Description CW Cup warmer AC Accounting system CL Cashless",
+      "token_count": 57,
+      "metadata": {
+        "source_page": 17,
+        "chunk_id": 16
+      }
+    },
+    {
+      "text": "| Description of machine 18 User manual A300 FB 5 DESCRIPTION OF MACHINE 5.1 Coffee machine To provide you with an overview of your machine, a sample configuration is illustrated here. Note that your device may look different from the configuration shown here. Bean hopper Powder hopper (option) Operator panel (8\" touch screen) Drip tray with drip grid Insertion flap Door lock Cup platform (option) Water tank 5.1.1 Standard – 8\" touch screen – One grinder (rear LH) – Hot water spout – Main water connection or water tank – Automatic descaling system 5.1.2 Options – Additional unit for bean hopper – Single powder dosing unit – Twin powder dosing unit – Grounds ejection (only in conjunction with main water connection) – Door lock – Lockable bean and powder hopper – Feet, 40 mm – Adjustable feet, 70 mm",
+      "token_count": 104,
+      "metadata": {
+        "source_page": 18,
+        "chunk_id": 17
+      }
+    },
+    {
+      "text": "Description of machine | 5 User manual A300 FB 19 – Adjustable feet, 100 mm – Franke Digital Services 5.2 Add-on units 5.2.1 Cup warmer To enjoy coffee at its best, you need pre-heated cups. The cup warmer with four heatable shelves fits perfectly to your coffee machine. 5.2.2 Accounting system The accounting system processes all payment transactions and records all accounting data. Interfaces: – VIP Payment systems: – Card readers 5.3 Overview of operating modes The suitable operating mode depends on the utilization of your coffee machine, your product range and the preferences of your customers. Your service technician will be happy to help you set the appropriate operating mode.",
+      "token_count": 81,
+      "metadata": {
+        "source_page": 19,
+        "chunk_id": 18
+      }
+    },
+    {
+      "text": "| Description of machine 20 User manual A300 FB 5.3.1 User interface 1 2 1 Switch between maintenance level and product selection via the top left-hand cor- ner 2 Scroll forwards or backwards 5.3.2 Quick Select operating mode Light roast Dark roast Iced - Light roast Iced - Dark roast Tea water Hot water The Quick Select operating mode is the standard set- ting for self-service. Once your customer has se- lected a beverage, he/she can adapt it in the sec- ond step if product options are activated. Structure of the user interface – Level 1: Product selection, up to 5 pages; 6, 12 or 20 product buttons can be displayed per page – Level 2: Customize beverages, select product options, initiate beverages preparation process Individual adaptations – Display: 2x3, 3x4 or 4x5 products per page – Individual arrangement of beverages 5.3.3 Individual Operating Mode Once your customer has selected a beverage, he/ she can adapt it in the second step if product op- tions are activated.",
+      "token_count": 124,
+      "metadata": {
+        "source_page": 20,
+        "chunk_id": 19
+      }
+    },
+    {
+      "text": "Description of machine | 5 User manual A300 FB 21 5.3.4 Operating modes in combination with Credit Mode The Credit Mode works with every operating mode and makes the product prices, credit and lack of credit clear on the operator panel. In the Drink Selection status, you cannot add any drink options with the Credit Mode configuration. You can activate the Credit Mode in the My settings menu under 1 Set machine > 1.12 Payment. Select Activate payment. Light roast USD 4.00 Dark roast USD 4.00 Iced - Light roast USD 4.00 Iced - Dark roast USD 4.00 Tea water USD 4.00 Hot water USD 4.00 Credit: USD 6 Display – Product prices – Credit – Missing credit Menu item 1.12 Payment 5.4 Franke Digital Services (option) Developed specially for the Franke coffee machine fleet, our digital services give you control and a clear overview of all activities and information about the coffee machines. Centrally controlled remote mainte- nance, such as software and configuration updates, means that on-site interventions are not required. You can obtain additional information from your Franke service technician or on the Franke website.",
+      "token_count": 138,
+      "metadata": {
+        "source_page": 21,
+        "chunk_id": 20
+      }
+    },
+    {
+      "text": "| Installation 22 User manual A300 FB 6 INSTALLATION 6.1 Preparations – The main power connection for the coffee machine must be protected by a residual current circuit- breaker (RCCB). – Each terminal of the power supply must be able to be interrupted using a switch. – The water connection must comply with Requirements of the water supply [} 25] and local and national rules and regulations. – The coffee machine must be connected to the water supply with the supplied hose kit. Do not use any other water hoses that happen to be present. – Make sure that the coffee machine can be placed on a horizontal and stable support. The operator panel should be at eye level and allow ergonomic operation. You must have completed these preparations before a service technician can install the coffee machine for you. The service technician will install your coffee machine and carry out the initial commissioning process. The technician will walk you through the basic functions.",
+      "token_count": 120,
+      "metadata": {
+        "source_page": 22,
+        "chunk_id": 21
+      }
+    },
+    {
+      "text": "Installation | 6 User manual A300 FB 23 6.2 Dimensions A300 with main water connection A300 with water tank and hopper extension Front/side view",
+      "token_count": 18,
+      "metadata": {
+        "source_page": 23,
+        "chunk_id": 22
+      }
+    },
+    {
+      "text": "| Installation 24 User manual A300 FB A300 with main water connection A300 with water tank and hopper extension Minimum distances, top and rear",
+      "token_count": 18,
+      "metadata": {
+        "source_page": 24,
+        "chunk_id": 23
+      }
+    },
+    {
+      "text": "Installation | 6 User manual A300 FB 25 Hose feedthrough Grounds chute (optional accessories) Hose feedthrough in the counter Minimum clearances – To the rear panel: 50 mm – Above: 200 mm (for filling and removal of the bean hopper) – To the right: 127 mm (for opening the door) NOTICE Overheating damage If the clearances around and above the machine are too small, heat may accumulate in the machine and lead to faults. a) Maintain the prescribed installation dimensions and clearances. b) Take care to ensure that the clearance spaces are not blocked. 6.2.1 Feet A300 FB is delivered with feet. – Feet 40 mm (standard) – Feet 7 mm (option) – Feet 70 mm (option) – Feet 100 mm (option) Adjustable feet can be used to compensate for unevenness or differences in height. 6.3 Requirements of the water supply 6.3.1 Main water connection Water pressure 0,8-8,0 bar",
+      "token_count": 110,
+      "metadata": {
+        "source_page": 25,
+        "chunk_id": 24
+      }
+    },
+    {
+      "text": "| Installation 26 User manual A300 FB Flow rate >100 ml/s Water temperature <25 °C Connection to the main water connection G3/8\" compression fitting and metal hose l = 1500 mm Only connect with the hose kit provided – The main water connection must meet the requirements of the technical data and comply with appli- cable federal, state, and local regulations. – The main water connection must have a backflow prevention device. – The main water connection must be equipped with a shut-off valve and a check valve with an up- stream filter accessible for inspection. It must be possible for the filter to be removed for cleaning. – Water from the household decalcification system must not be used. – Filter with at least 100 loops/inch (UL) 6.3.2 Determining the water hardness with a measuring strip NOTICE Machine damage caused by limescale build-up If the water hardness setting is incorrect, limescale can build up in the coffee machine. Limescale deposits may damage the coffee machine. a) Measure the water hardness during commissioning. Then set the water hardness in the Commissioning menu on the basis of the measurement. The hardness level of the water in use determines the capacity of the water filter (only in conjunction with mains water connection) and the amount of water in between descaling cycles. Once the hardness level has been set in the machine program, the coffee machine will automatically prompt you to descale the machine at the correct time. Packaged water hardness measuring strip 1. Remove the measuring strip from the pack- aging. 2. Dip the measuring strip into the water for 1 second. 3. Gently shake off any excess water. ð The color of the measuring strip will change. 4. After one minute, read off the water hard- ness level. The water hardness corresponds to the number of red-colored fields. 5. Enter the measured result into the mainte- nance menu of the machine under Water settings [} 53].",
+      "token_count": 233,
+      "metadata": {
+        "source_page": 26,
+        "chunk_id": 25
+      }
+    },
+    {
+      "text": "Installation | 6 User manual A300 FB 27 Conversion table; Descaling prompts for machines without water filter Hardness level Result shown on the measuring strip Water hardness Descaling prompt after Mandatory descal- ing after 0 0 x red >0° dH/>0°e/>0°fH 12 operating days 14 operating days 1 1 x red >5° dH/>6°e/>9°fH 100 l 125 l 2 2 x red >10° dH/>13°e/>18°fH 80 l 100 l 3 3 x red >15° dH/>19°e/>27°fH 60 l 75 l 4 4 x red >20° dH/>25°e/>36°fH 40 l 50 l 5 5 x red >25° dH/>31°e/>45°fH 20 l 25 l 6.3.3 Water quality Total hardness: 4–8° dH GH (German total hardness) 7–14° fH GH (French total hardness) 4,2–8,3 GPG 70–140 ppm (mg/l) Carbonate hardness 3–6° dH KH / 50–105 ppm (mg/l) Acid content/pH value 6.5–7.5 pH Chlorine content < 0.5 mg/l Chloride content < 30 mg/l TDS (total desolved solids) 30–150 ppm (mg/l) Electrical conductivity (measured) 50–200 µS/cm (microsiemens) Iron content < 0.3 mg/l – Color: Clear – Taste: Fresh and pure taste – Aroma: No perceptible aroma – No rust particles in the water 6.3.4 Water outlet – Drain hose: D = 20 mm, L = 2000 mm – Connection to a lower-lying siphon",
+      "token_count": 150,
+      "metadata": {
+        "source_page": 27,
+        "chunk_id": 26
+      }
+    },
+    {
+      "text": "| Installation 28 User manual A300 FB 6.4 Connecting the wastewater ü The components for securing the waste- water hose are present. 1. Insert the wastewater hose into the siphon (hygiene barrier) so that there is a free flow path [1] of at least 50 mm. The siphon still has to be ventilated. 2. Secure the wastewater hose in this position [arrow] to prevent it from sliding further into the siphon or from being pulled out acciden- tally. 3. Pour water into the drip tray and check the drain. 6.5 Switching the machine on 1. Briefly press the button [1]. ð The machine starts.",
+      "token_count": 73,
+      "metadata": {
+        "source_page": 28,
+        "chunk_id": 27
+      }
+    },
+    {
+      "text": "Switching on the machine for the first time | 7 User manual A300 FB 29 7 SWITCHING ON THE MACHINE FOR THE FIRST TIME Once the machine is connected to the power grid, it switches itself on. When the machine is switched on for the first time, the software takes you through the basic settings that need to be configured when the machine is commissioned. All basic settings can be changed later: Configuration 1. Connect the machine to the power grid. ð The machine starts up and launches the installation wizard. 2. Remove the protective film from the screen. 3. Configure the basic settings in line with the instructions on the operator panel – see table below. Setting the language, time and date Parameter Value range Remarks Language – de (German) – en (English) – fr (French) – ... Thirty-four languages are avail- able The language is switched immedi- ately 12/24-hour display 12 hours 24 hours Time – Hour – Minute 0 – 23/0 – 11 0 – 59 Set the hour Set the minutes Date – Day – Month – Year 0 – 31 0 – 12 2019 – 9999 Set the day Set the month Set the year Time zone Select a time zone from the list Water supply settings Parameter Value range Remarks Water hardness Hardness levels 1 - 5 Enter the measured water hard- ness Determining the water hardness with a measuring strip [} 26] The water hardness must be set on machines that have a water tank and machines that are con- nected to the mains water con- nection but have no water filter Water filter – Yes – No Only in conjunction with main wa- ter connection",
+      "token_count": 207,
+      "metadata": {
+        "source_page": 29,
+        "chunk_id": 28
+      }
+    },
+    {
+      "text": "| Switching on the machine for the first time 30 User manual A300 FB Parameter Value range Remarks Filter quantity Water filter type Selection list Depends on the filter used and the water hardness 7.1 Fill resources Only those resources that are available as per the configuration of the A300 FB are displayed. The grind coarseness required depends on the beverage-preparation method, the type of roasted coffee used and the coffee beverage. It is a good idea to use separate grinders to make espresso, caffè crema and decaffeinated coffee. This enables a specific grind coarseness to be set for each different type of roasted coffee used. Setting the grind coarseness [} 35] Filling containers with resources Been hopper left-hand Bean hopper right-hand Powder hopper position 2 Milk Medium Espresso roast Medium roast Powdered chocolate Whole milk Milk powder Powder hopper position 4 Back Next 1. Fill the containers with the defined raw mate- rials. 2. Tap Next. ð You have now configured the most impor- tant settings and are ready to produce your first beverage. To adjust the standard beverages, press on the Franke logo in the top left. See also the Setting beverages [} 50] chapter. You can change any of the settings that you configured when commissioning the machine at any time by going to the Maintenance menu. Configuration [} 49] 7.2 Inserting a descaling cartridge 1 2 1. Remove the grounds container [1]. 2. Open the door lock (option) with the key. 3. Press the latch [2] on the inside and open the door. 3 4 5 4. Unscrew the screw cap [3] from the car- tridge [4]. 5. Remove the seal.",
+      "token_count": 196,
+      "metadata": {
+        "source_page": 30,
+        "chunk_id": 29
+      }
+    },
+    {
+      "text": "Switching on the machine for the first time | 7 User manual A300 FB 31 6. Insert the descaling cartridge [4] at an angle from below into the red double pipe [5]. 7. Close the door. 8. Insert the grounds container.",
+      "token_count": 29,
+      "metadata": {
+        "source_page": 31,
+        "chunk_id": 30
+      }
+    },
+    {
+      "text": "| Filling and emptying 32 User manual A300 FB 8 FILLING AND EMPTYING 8.1 filling the machine NOTICE Incorrect filling of the hoppers Incorrectly filling the hoppers can produce defective products and the machine can be damaged as a re- sult. a) Fill the bean hopper with coffee beans. b) Fill the powder hopper with powder suitable for automatic coffee makers. 8.2 Filling beans WARNING Risk of injury If objects find their way into the bean hopper or grinder, splinters may be ejected, leading to injury. a) Never insert any objects into the bean hopper or grinder. NOTICE Poor beverage quality The oil from the coffee beans is deposited on the inside of the bean hopper as a thin film of oil. This de- posited oil ages quickly and impairs the taste of the beverages produced. a) Remove the oil film from the inside of the bean hopper on a daily basis. b) To do this, use a dry cloth or a cloth moistened only with water. c) Do not use any cleaners, as these alter the taste of the coffee. 1. Lift off the bean hopper lid. 2. Fill coffee beans.",
+      "token_count": 138,
+      "metadata": {
+        "source_page": 32,
+        "chunk_id": 31
+      }
+    },
+    {
+      "text": "Filling and emptying | 8 User manual A300 FB 33 3. Fit the lid. 8.3 Using and storing roasted coffee beans One crucial factor when it comes to optimal in-cup quality is the freshness of the roasted coffee beans used. a) Do not pour roasted coffee beans into the bean hoppers until you are just about to use the coffee ma- chine. This ensures that you retain as much of the flavor as possible. Only pour in as much as you in- tend to use in the next few hours on the same day. Bean hoppers are not storage containers. b) Always close the bean hoppers properly. Make sure that you reseal open coffee packets properly after use. c) Store roasted coffee in a cool, dry place away from direct sunlight. Do not store it in a fridge. d) Order only as much roasted coffee as you need – ordering small quantities regularly ensures that you always drink coffee at its freshest. e) Order small package sizes, e.g. 250 or 500 g instead of 1 kg. This prevents open packs from being stored or too much roasted coffee being poured into the bean hoppers. Monitor how much you use over a specific period, e.g. over the course of a week. Take note of when you need to refill and how much, and use this information to determine how much you will need over the next few hours. Mark the maximum fill level on each bean hopper, e.g. using a sticker. 8.4 Filling powder 1. Lift off the powder hopper lid. 2. Fill with powder suitable for automatic bev- erage dispensers.",
+      "token_count": 194,
+      "metadata": {
+        "source_page": 33,
+        "chunk_id": 32
+      }
+    },
+    {
+      "text": "| Filling and emptying 34 User manual A300 FB 3. Fit the lid. 8.5 Filling the water tank NOTICE Machine damage Pouring milk into the water tank can potentially damage the machine. a) Fill the water tank with water only. b) Disconnect the machine from the power supply and contact the service department if the water tank has been inadvertently filled with milk. Optimal Water quality [} 27] is essential for the quality of the beverage, as well as for a long service life and reliable operation of the machine. 1 2 1. Open the lid [1] and open the handle [2]. 3 1 2 2. Remove the water tank [1] upwards and clean if necessary. 3. Fill the water tank with fresh water [3] up to the mark [2]. Water quality [} 27] 4. Attach the full water tank and close the lid.",
+      "token_count": 102,
+      "metadata": {
+        "source_page": 34,
+        "chunk_id": 33
+      }
+    },
+    {
+      "text": "Filling and emptying | 8 User manual A300 FB 35 8.6 Setting the grind coarseness The grind coarseness can be adjusted individually for each grinder. Default setting: Center. – For a finer grind, push the lever to the right. – For a coarser grind, push the lever to the left. 8.7 Emptying the powder hopper CAUTION Cutting injuries/crushing The powder hoppers worm gear mechanism can cause cuts or crushing injuries. a) Exercise care when cleaning the powder hopper. NOTICE Contamination from powder Powder can fall from the powder hopper. a) Always transport the powder hopper in an upright position and ensure it is closed. 1 2 1. Remove the grounds container [1]. 2. Open the door lock (option) with the key. 3. Press the latch [2] on the inside and open the door. 3 4. Pull the locking slide [3].",
+      "token_count": 99,
+      "metadata": {
+        "source_page": 35,
+        "chunk_id": 34
+      }
+    },
+    {
+      "text": "| Filling and emptying 36 User manual A300 FB 5. Lift and remove the powder hopper. 6. Empty, clean, and dry the powder hopper. 7. Attach the powder hopper. 8. Push the locking slide all the way in. NOTICE Impairment of function If the powder hopper is not locked correctly, the function of the coffee machine and the product quality may be impaired. a) Push the locking slide all the way in. 8.8 Emptying the grounds container NOTICE Formation of mold Coffee residue can lead to the formation of mold. a) Empty and clean the grounds container at least once a day. 1 1. Remove and empty the grounds container [1]. 2. Clean and dry the grounds container. 3. Insert the grounds container [1]. 8.9 Empty the drip tray Clean the drip tray when a message appears on the operator panel asking you to do so. NOTICE Improper handling Liquid may leak out of the drip tray. a) Transport and empty the drip tray carefully.",
+      "token_count": 114,
+      "metadata": {
+        "source_page": 36,
+        "chunk_id": 35
+      }
+    },
+    {
+      "text": "Filling and emptying | 8 User manual A300 FB 37 ü The message Drip tray full is displayed on the operator panel. Drip tray full The drip tray is full. Empty the drip tray. Confirm 1. Pull out the drip tray. 2. Remove the drip grid. 3. Empty the drip tray. 4. Clean and dry the drip tray and drip grid. 5. Place the drip grid on the drip tray. 6. Push the drip tray into the machine. Drip tray missing The drip tray is missing or is not inserted correctly. Insert the drip tray correctly. Confirm 7. Tap Confirm.",
+      "token_count": 66,
+      "metadata": {
+        "source_page": 37,
+        "chunk_id": 36
+      }
+    },
+    {
+      "text": "| Preparing beverages 38 User manual A300 FB 9 PREPARING BEVERAGES WARNING Risk of scalding Hot beverages can lead to scalding. a) Always be careful with hot beverages. b) Use only suitable drinking vessels. 9.1 Preparing beverages using the individual operating mode 1. Place an appropriate drinking vessel under the dispensing spout. 2. Select a product. ð The product preview will appear. 3. Select product options. 4. Press the green button to start preparation. ð The beverage is being prepared. ð The product selection screen appears when the product is ready. 9.2 Preparing beverages with Cash Register When preparing several products one after the other, please observe the following: a) Have sufficient drinking vessels ready to use. b) You can continuously add new products to the waiting list during the preparation. c) You can select and clear products from the waiting list. 1. Place an appropriate drinking vessel under the dispensing spout. 2. Select the product options. 3. Select a product. ð The preparation begins.",
+      "token_count": 112,
+      "metadata": {
+        "source_page": 38,
+        "chunk_id": 37
+      }
+    },
+    {
+      "text": "Preparing beverages | 9 User manual A300 FB 39 4. Add more products to the queue list as needed. 5. Start the preparation of each of the products in the queue list by pressing the green but- ton. ð The next preparation begins. ð The product selection appears. ð All products are ready. 9.3 Preparing hot water You can stop the hot water spout at any time by pressing the cancel button. Example: Quick Select 1. Place an appropriate drinking vessel under the hot water spout. 2. Select Tea water. 3. Select the cup size. ð Hot water is dispensed until the cycle is complete.",
+      "token_count": 71,
+      "metadata": {
+        "source_page": 39,
+        "chunk_id": 38
+      }
+    },
+    {
+      "text": "| Cleaning 40 User manual A300 FB 10 CLEANING 10.1 Introduction The automatic cleaning process includes the cleaning of the coffee machine. NOTICE Dirty components Dirty components can have a negative effect on the function of the machine and the quality of beverages. a) Clean the removable components using the 5-step method. The removable components of the coffee machine are not dishwasher-safe. Rinsing is not a substitute for daily cleaning! Rinsing is necessary to remove residue build-up in the coffee system. Your A300 FB automatically rinses after certain time intervals as well as when it is switched on or off. 10.2 Required cleaning accessories – Cleaning tablets – Microfiber cloth – Paint brush – Brush set – Collecting container 10.3 5-step method Clean the removable components of your coffee machine using the 5-step method. The display shows you the components that can be removed during cleaning. 1. Remove coarse dirt with a cleaning brush or paint brush. 2. Soak the components in hot water with a mild cleaner. 3. Wash the components. 4. Rinse the components thoroughly. 5. Dry the components. 10.4 Starting the cleaning process When the cleaning cycle is complete, the machine either switches back to the maintenance level or the energy saving mode. Your service technician can set the desired option for you.",
+      "token_count": 152,
+      "metadata": {
+        "source_page": 40,
+        "chunk_id": 39
+      }
+    },
+    {
+      "text": "Cleaning | 10 User manual A300 FB 41 10.4.1 Starting cleaning via the Cleaning and Maintenance menu WARNING Risk of scalding Hot liquids and steam escape during cleaning and can lead to scalding. a) Keep hands away from the spouts and nozzles during this process. 1. Press in the top left corner. 2. Enter the PIN. PIN codes [} 49] 3. Press Ok. 4. Select Cleaning and maintenance. Wipe protection Filter water quantity Rinsing the coffee machine Cleaning the coffee machine Error/event log Cleaning and maintenance 5. Select Clean coffee machine. 6. Confirm message with Yes to begin the cleaning process. 7. Follow the instructions on the user interface and confirm the completed steps by select- ing Next. ð The machine shows the next step. 10.5 Loosen bean hopper finger guard for cleaning The bean hopper finger guard prevents injuries caused by the grinder. The finger guard may only be re- moved for cleaning. ü The coffee machine is switched off and dis- connected from the power supply. ü A hexalobular 10 screwdriver is provided. 1. Remove the container lid. 1 2 2. Loosen both screws [1] and remove the fin- ger guard [2].",
+      "token_count": 135,
+      "metadata": {
+        "source_page": 41,
+        "chunk_id": 40
+      }
+    },
+    {
+      "text": "| Cleaning 42 User manual A300 FB 3. Clean the bean hopper and the protective grid. 4. Attach the dried finger guard with both screws. 5. Connect the coffee machine to the power supply. 10.6 Weekly cleaning Clean the machine components listed in this chapter at least once a week, in addition to the daily cleaning process. Clean the machine immediately if you notice any soiling. 10.6.1 Cleaning the machine surface 1. Clean the surface of the machine with a damp cloth. 2. If necessary, use a mild cleaner. NOTICE! Do not use abrasive cleaners. 10.6.2 Cleaning the water tank (if present) Check the water tank daily for dirt or limescale. Clean the appliance immediately if it is dirty or has lime scale. 1 1. Remove and empty the water tank [1]. 2. Clean the water tank using the 5-step method. 10.6.3 Cleaning the powder hopper 1 2 1. Remove the grounds container [1]. 2. Open the door lock (option) with the key. 3. Press the latch [2] on the inside and open the door. 3 4. Pull the locking slide [3].",
+      "token_count": 125,
+      "metadata": {
+        "source_page": 42,
+        "chunk_id": 41
+      }
+    },
+    {
+      "text": "Cleaning | 10 User manual A300 FB 43 5. Raise and remove the powder hopper. 6. Empty the powder hopper. 7. Clean the powder hopper with a damp cloth. Wipe the inside of the hopper with a dry cloth. 8. Attach the powder hopper. 9. Push in the locking slide. 10. Close the door and insert the powder hop- per. 10.6.4 Cleaning the drip tray and drip grid. NOTICE Escaping liquid Applies to machines with a wastewater connection! On machines with a wastewater connection, if water remains in the drip tray, this can escape when the drip tray is removed. a) Before removing the drip tray, ensure that the remaining water has drained. 3 2 1 4 1. Clean the drip tray [1], the drip tray lid [2] and the drip grid [3] using the 5-step method. 2. Thoroughly clean the projecting features on the underside [4] of the drip tray lid [2]. The rear of the drip tray [1] must be clean and dry, both inside and out. If it is not, this may cause the drip tray's continuous level sensor to issue an alert in error. 1 2 If the coffee machine is connected to the wastewater system, there are two O-rings on the back of the drip tray [2]. These must be moistened with water so that the drip tray can fully engage. Otherwise, the capaci- tive sensor cannot detect the drip tray.",
+      "token_count": 165,
+      "metadata": {
+        "source_page": 43,
+        "chunk_id": 42
+      }
+    },
+    {
+      "text": "| Cleaning 44 User manual A300 FB 10.6.5 Cleaning the screen 1. Press in the top left corner. 2. Enter the PIN. PIN codes [} 49] 3. Press Ok. 4. Select Cleaning and maintenance. Cleaning and maintenance Error/event log Clean the coffee machine Rinse the coffee machine ... Wipe protection 5. Select Wipe protection. ð The user interface is locked for 20 sec- onds. 6. Clean the screen. ð The maintenance level appears. 10.7 Rinsing the coffee machine WARNING Risk of scalding Hot water is released during rinsing. a) Keep hands away from the spouts and nozzles during this process. b) Do not place anything on the drip grid. c) IN CASE OF SCALDING: Immediately cool the affected area and, depending on the severity of the in- jury, consult a doctor. 1. Press in the top left corner. 2. Enter the PIN. PIN codes [} 49] 3. Press Ok. 4. Select Cleaning and maintenance.",
+      "token_count": 103,
+      "metadata": {
+        "source_page": 44,
+        "chunk_id": 43
+      }
+    },
+    {
+      "text": "Cleaning | 10 User manual A300 FB 45 Clean coffee machine Descale coffee machine Rinse coffee machine Wipe protection 5. Tap Rinse coffee machine and confirm. ð The coffee machine is rinsed. 10.8 Care kit Over time, some of the coffee machine's components may be subject to wear or may become very dirty, and will need to be replaced. This may be the case even before the service technician is due to carry out scheduled maintenance work. We have compiled a list of the parts in question to make it easy to reorder them. You can replace the following components yourself. Image Quantity Item number Item description Remarks 1 560.0637.018 Brewing module Ø 43 with 0.6 mm orifice The item number can be found on the label on the side of the brewing module. The following section de- scribes the necessary steps. Replacing the brewing unit [} 45] 1 560.0001.697 Brewing module Ø 50E with 0.6 mm orifice The item number can be found on the label on the side of the brewing module. The following section de- scribes the necessary steps. Replacing the brewing unit [} 45] 2 560.0578.001 O-ring 13x1.5 EPDM Seal for drip tray with drain Only for versions with a main water connection Cleaning the drip tray and drip grid [} 43] 1 560.0001.187 Mixing chamber For powder system 1 560.0580.820 Mixer chamber lid For powder system 10.8.1 Replacing the brewing unit 1. Empty the machine and disconnect it from the power grid. 2. Remove the grounds container from the ma- chine. 3. Open the machine's door.",
+      "token_count": 190,
+      "metadata": {
+        "source_page": 45,
+        "chunk_id": 44
+      }
+    },
+    {
+      "text": "| Cleaning 46 User manual A300 FB 1 2 4. Release the brewing module lock [1] in coun- terclockwise direction. 5. Take out the brewing module [2] by pulling it forwards. 6. Insert the new brewing module [2]. 7. Turn the brewing module lock [1] clockwise to fix it. 8. Close the door of the machine. 9. Insert the grounds container into the ma- chine. 10. Connect the machine to the power grid.",
+      "token_count": 47,
+      "metadata": {
+        "source_page": 46,
+        "chunk_id": 45
+      }
+    },
+    {
+      "text": "Descaling | 11 User manual A300 FB 47 11 DESCALING To maintain consistently high in-cup quality and ensure that the coffee machine runs reliably, the machine must be descaled regularly. For this purpose, the A300 FB has an automatic descaling system. If descaling is necessary, the coffee machine indicates this on the operator panel. Limescale deposits can form in the heating cartridge in particular. To descale the machine, only use the descaler concentrate from Franke (item number 560.0589.837). This guarantees reliable descaling results. a) Make sure that you order descaler concentrate in good time so that you can descale the coffee ma- chine immediately when the prompt appears on the coffee machine operator panel. 11.1 Descaling due date When commissioning the A300 FB, you will be prompted to measure the water hardness and to enter this into the software. Determining the water hardness with a measuring strip [} 26] This value is used to calculate the amount of water until the machine will next need to be descaled. Machines without a water filter A descaling prompt is displayed when the calculated water quantity is reached or, at the latest, after 12 days of operation. The A300 FB can be used for another 2 days after the descaling prompt is first dis- played. After this period, the machine is disabled until descaling is carried out. Machines with a main water connection and water filter A descaling prompt is displayed after 12 days of operation. After the descaling prompt is first displayed, the A300 FB can continue to be used until the remaining water is used up. After this period, the machine is dis- abled until descaling is carried out. 11.2 Descaling If descaling is necessary, a message is displayed on the operator panel. The message can be closed so as not to disrupt operation. The following options are available for starting the descaling process: – Descaling when cleaning is next carried out (default setting) – Descaling independently of cleaning – descaling is started automatically at a specified time – Manually starting descaling NOTICE Discontinuing descaling Applies to machines with a water tank: If the water tank is empty or the drip tray is full, automatic descaling is not carried out. a) Empty the drip tray before cleaning/descaling. b) Fill the water tank before cleaning/descaling. c) Position the cleaning container on the drip grid in accordance with the instructions on the operator panel.",
+      "token_count": 291,
+      "metadata": {
+        "source_page": 47,
+        "chunk_id": 46
+      }
+    },
+    {
+      "text": "| Descaling 48 User manual A300 FB 11.2.1 Descaling after cleaning With the default setting, when descaling is due it is initiated straight after cleaning is next carried out with- out requiring any further confirmation. No additional action is required on the part of the operator. Descal- ing takes approx. 15 - 25 minutes, depending on the machine model. If descaling is due, the system checks whether there is sufficient descaler concentrate before the cleaning process begins. If there is in- sufficient descaler concentrate, a prompt to replace the descaling cartridge is displayed. Inserting a descaling cartridge [} 30] 11.2.2 Descaling independent of cleaning To prevent the descaling process from disrupting operation, your service technician can set a time for the descaling process to run outside of your operating hours. 11.2.3 Initiating descaling manually WARNING Risk of scalding Hot liquids and steam escape during descaling and can lead to scalding. a) Keep hands away from the spouts and nozzles during this process. 1. Press in the top left corner. 2. Enter the PIN. PIN codes [} 49] 3. Press Ok. 4. Select Cleaning and maintenance. Cleaning the coffee machine Descaling the coffee machine Rinsing the coffee machine Wipe protection 5. Select Descaling. ð The automatic descaling process starts and instructions are displayed regarding the next steps to be taken.",
+      "token_count": 156,
+      "metadata": {
+        "source_page": 48,
+        "chunk_id": 47
+      }
+    },
+    {
+      "text": "Configuration | 12 User manual A300 FB 49 12 CONFIGURATION 12.1 Calling up the maintenance level 1. Press in the top left corner. 2. Enter the PIN. PIN codes [} 49] 3. Press Ok. 12.2 PIN codes Default PIN codes are assigned at the factory: Owner Specialist Cleaning staff Operator Default PIN 1111 2222 5555 7777 My PIN ... ... ... ... The PINs for key (secured) products and On/Off machine can be viewed and changed with the owner role in the My settings > Access rights menu. 12.3 Input methods On Tap the switch to switch between Yes/No or On/Off. The visible value is active. Tap the arrow to display the selection and to select the option. Drag the scale to adjust parameters. The framed value is active. Tap the keyboard to enter text or numbers. Start Press the button to carry out the corresponding settings, e.g. Start, Test.",
+      "token_count": 102,
+      "metadata": {
+        "source_page": 49,
+        "chunk_id": 48
+      }
+    },
+    {
+      "text": "| Configuration 50 User manual A300 FB 12.4 My settings Setting beverages Resources Set machine Access rights 12.4.1 Setting beverages Export/import Sort beverages Edit Hide Copy Adjustable On Light roast Iced - Dark roast Iced - Light roast Dark roast Tea water Hot water Action Input/function Remarks Export/import – Back up a product offering package (POP) – Load backup – Back up beverage settings to a USB stick, e.g., before a software update – Load beverage settings from a USB stick to the coffee machine Sort beverages – Change the positions of the beverages – Set the number of beverages to be displayed (2 x 3, 3 x 4, or 4 x 5) 1. Tap the Sort beverages button. 2. Tap the beverage you wish to move. 3. Tap the desired position for the beverage. Edit Modify the highlighted beverage Display/hide Show or hide available beverages",
+      "token_count": 106,
+      "metadata": {
+        "source_page": 50,
+        "chunk_id": 49
+      }
+    },
+    {
+      "text": "Configuration | 12 User manual A300 FB 51 Action Input/function Remarks Copy Copy existing beverages to use as the basis for a variant Adjustable – Yes – No Activate/deactivate. When this function is activated, a beverage can be modified in the following ways after being selected: – Cup size – Bean type, if more than one bean type has been configured – Aroma strength Quick Select operating mode Modifying a beverage Coffee First bean type Bean quantity Water quantity Water temperature Dark espresso blend (left- hand) Pre-infusion profile Off Medium Short Long 1 2 3 4 Dark roast 1 Active beverage 2 Resource (coffee, milk, etc.) 3 Configuration parameters 4 Slide control 12.4.2 Set resources You can change the settings that you configured when commissioning the machine (Refilling containers with resources) at any time. For each container, a list of available resources is stored from which you can choose.",
+      "token_count": 110,
+      "metadata": {
+        "source_page": 51,
+        "chunk_id": 50
+      }
+    },
+    {
+      "text": "| Configuration 52 User manual A300 FB Allocate resources Set resources Been hopper left Bean hopper right Powder hopper position 3 Milk Medium Espresso roast Medium roast Powdered chocolate Whole milk Milk powder Powder hopper position 4 Prepare milk type 1 Set foam profiles 1. To allocate a resource to a container, tap the preset resource type. 2. Select the appropriate resource type from the list. 3. Repeat this process for all containers. 4. To fill the milk lines, select Prepare milk type 1. 12.4.3 Set machine Language Parameter Value range Remarks Language – de (German) – en (English) – fr (French) – ... Thirty-three languages are available The language is switched immediately Date and time Parameter Value range Remarks 12/24-hour display 12 hours 24 hours Date – Day – Month – Year 0 – 31 0 – 12 2019 – 9999 Set the day Set the month Set the year Time – Hour – Minute 0 – 23/0 – 11 0 – 59 Set the hour Set the minutes Time zone Select a time zone from the list",
+      "token_count": 130,
+      "metadata": {
+        "source_page": 52,
+        "chunk_id": 51
+      }
+    },
+    {
+      "text": "Configuration | 12 User manual A300 FB 53 Timers Basic settings Parameter Value range Remarks Saving energy – Active – Off If Active, the waiting time can be set Range: 15 - 120 minutes Switch on/off auto- matically – Active – Off – Switch timer on or off – Use the pin to adjust the timer Adjusting timers Parameter Value range Remarks Action – Switch on automatically – Switch off automatically Select timer operation Hour 0 ‑ 23 Set switch-on/switch-off time Minute 0 ‑ 59 Repeat every Mon- day – Yes – No Activate/deactivate the timer depending on the day ... Repeat every Sun- day Water settings Water supply settings Parameter Value range Remarks Water filter active – Yes – No – Yes: Slide control appears for entering the dura- tion of use/the water quantity for the water filter (depending on the filter used) – No: Set water hardness Water hardness Hardness levels 0 - 5 Set the measured water hardness on the slider De- termining water hardness using measuring strips The water hardness must be set on machines that have a water tank and machines that are connected to the mains water connection but have no water fil- ter Factory settings Parameter Value range Remarks Reset to factory set- tings All settings, including your own products, will be lost! Reset products to factory settings Your own product settings will be lost!",
+      "token_count": 173,
+      "metadata": {
+        "source_page": 53,
+        "chunk_id": 52
+      }
+    },
+    {
+      "text": "| Configuration 54 User manual A300 FB System information Category Value Total version Machine software version that is currently installed Sub-system versions Machine Machine type Serial number [Serial number] FPC Franke product catalog version that is currently in- stalled POP (product offering package) Product offering package version that is currently in- stalled (product positioning/sorting) License Active license for Franke Digital Services, if present Ethernet device A IP address MAC address 12.4.4 Access rights The roles are organized into the following hierarchy: Service technician > Owner > Operator > Mainte- nance staff. Roles and rights Action Service technician Owner Specialist Operator Change PIN and ac- tivate test products Yes (for all roles) Yes (for child roles) No No Add/change/re- move/adapt prod- ucts Yes Yes (reduced func- tionality) No No View counter Yes Yes Yes No Perform cleaning Yes Yes Yes Yes Perform software update (USB) Yes No Yes No",
+      "token_count": 110,
+      "metadata": {
+        "source_page": 54,
+        "chunk_id": 53
+      }
+    },
+    {
+      "text": "Individualization and data transfer | 13 User manual A300 FB 55 13 INDIVIDUALIZATION AND DATA TRANSFER 13.1 Overview This menu provides you with the following options: – Use existing Franke media for screen savers or as advertising media – Upload and view your own media objects on the machine – Use your own media for screen savers or as advertising media – Configure the behavior of the different operating modes and the screen saver – Save settings – Create regular backups of your machine to a USB stick – Perform downloaded digital services updates 13.2 Multimedia functions – Use image files as advertising media – Use image files as screen saver 13.3 Manage Digital Signage via USB stick You can maintain the selection and display times of your advertising media (digital signage) in a freely ac- cessible web tool. To do this, export and import the corresponding file with a USB stick. http://iot.franke.com/digital-signage ü The coffee machine has software version 4.0 or higher. 1. Connect a USB stick to the machine. 2. Go to menu item Individualization and data transfer > 1 Digital Signage. 3. Tap the Export Digital Signage button. 4. For the parameter Eject USB stick select the value Yes. 5. Tap the Export button. ð The coffee machine saves the *.bundle file to the USB stick. 6. Remove the USB stick. 7. Connect the USB stick to any computer. 8. In the browser, go to the website http:// iot.franke.com/digital-signage. 9. Transfer the *.bundle file from the USB stick to the website via drag&drop or file explorer. ð The configuration options for Digital Sig- nage are displayed. 10. Make the desired settings. 11. Rename the file via the pencil icon in the up- per left-hand corner, if desired. 12. Tap the Download button on the bottom left side of the window.",
+      "token_count": 214,
+      "metadata": {
+        "source_page": 55,
+        "chunk_id": 54
+      }
+    },
+    {
+      "text": "| Individualization and data transfer 56 User manual A300 FB ð The web page asks whether the changes made should be saved. 13. Confirm the question. 14. Select the Manual value. 15. Tap the Download bundle button. ð The downloaded *.bundle file ends up in the download folder of the computer. 16. Move the *.bundle file to the USB stick. 17. Remove the USB stick. 18. Connect the USB stick to the machine. 19. Go to menu item Individualization and data transfer > 1 Digital Signage. 20. Tap the Import Digital Signage button. 21. Select the revised *.bundle file. 22. Tap the Download and install button. ð The coffee machine adopts the new set- tings. 13.4 Configure application Changes made will only take effect after the Save button is tapped. 13.4.1 Language settings Parameter Value range Remarks Language – All available lan- guages Switching language – Yes – No – Yes: a country flag appears in the top right corner during product selection. The languages defined under Language 1-6 appear by tapping the flag. If a language is selected, the translated beverage names and billing information will appear. After the duration specified under Timeout language switching has elapsed, the default language specified under Language reappears. – No: language switching is deactivated Timeout for language change 20–120 s Waiting time after which the coffee machine switches back to the default language set in Lan- guage or under the menu 1 Set machine > 1.1 Language. Language 1-6 de, en, fr, bg, cs, da, es-ES, es-US, et, fi, fr-CA, hr, hu, it, ja, ko, lt, lv, nl, no, pl, pt- BR, ro, ru, sk, sl, sr, sv, tr, th, uk, zh-CN, zh-TW, ar, he – Appears only if the value Yes is selected for Lan- guage change – Determines how many and which alternative languages are available during product selec- tion",
+      "token_count": 216,
+      "metadata": {
+        "source_page": 56,
+        "chunk_id": 55
+      }
+    },
+    {
+      "text": "Individualization and data transfer | 13 User manual A300 FB 57 13.4.2 Operating mode Parameter Value range Remarks Operating mode – Self-service – Quick Select – Non-self-ser- vice – Cash Register Hide cancel button – Yes – No Display clock – Yes – No Display brightness 15-100 % Audible signal for beverage preparation – Yes – No Audible signal for error mes- sages – Yes – No 13.4.3 Display [Operating mode] Depending on the operating mode, different display parameters are available. 13.4.4 Nutritional value settings Parameter Value range Remarks Display nutritional value infor- mation – Yes – No – Activate/deactivate the display of nutritional value information – The nutritional information can be entered in chapter Menu 4 Nutritional value information Further nutritional value infor- mation Free text input 13.4.5 Accounting Parameter Value range Remarks Select – Coins – Cards – Customer card – Contactless – Cell phone – Bills",
+      "token_count": 111,
+      "metadata": {
+        "source_page": 57,
+        "chunk_id": 56
+      }
+    },
+    {
+      "text": "| Individualization and data transfer 58 User manual A300 FB Parameter Value range Remarks Display pop-up window – Yes – No Activate/deactivate accounting pop-up window 13.4.6 Transaction approval (API) Parameters are not related to each other The parameters Activate transaction approval and Allow Remote Control can cover similar use cases. However, the parameters are not related to each other. Parameter Value range Remarks Activate transaction approval – Yes – No The transaction approval enables interaction be- tween the coffee machine and the third-party app. The use case is the same as for Remote Control, but instead of the Franke web app, the app from a third- party manufacturer is used. Allow Remote Control – Yes – No With Remote Control, the coffee machine refers to a QR code that leads to Franke's web app. The web app enables both beverage selection and payment via cell phone. Once payment has been successfully processed, the app triggers the beverage produc- tion. 13.5 Loading/backing up data 13.5.1 Back up data Desired action Menu item Information/instruction Export a configuration and media 3.1 Back up data – Export configuration – Back up Franke media – Back up your own media – Eject USB stick automatically – Display of file name 13.5.2 Load data Desired action Menu item Information/instruction Import configuration and media 3.2 Load backup – Load backed up data (configuration, Franke me- dia, your own media) – Eject USB stick automatically",
+      "token_count": 174,
+      "metadata": {
+        "source_page": 58,
+        "chunk_id": 57
+      }
+    },
+    {
+      "text": "Individualization and data transfer | 13 User manual A300 FB 59 13.5.3 Back up XML data Desired action Menu item Information/instruction Back up XML data 3.3 Back up XML data Export operating data such as maintenance data, er- ror logs, or product and machine counters – Eject USB stick automatically – Display of file name 13.6 Set default values Desired action Menu item Information/instruction Set default values 4 Set default values In the selected areas, restore the default values (e.g. variable and fixed data) or delete counters (product and machine counters) and files (product and error log, files) Confirm changes made by tapping the Apply button 13.7 Activating configurations If updates (menu bundle, software version, etc.) are transferred to the coffee machine via Dashboard Provi- sioning or Deployment or via USB stick, they must be activated on the coffee machine. The available update packages can be viewed in the Individualization and data transfer menu on the coffee machine. ü A configuration, a menu bundle, or a new software version was loaded onto the coffee machine via the Provisioning or Deployment dashboard. 1. Tap the Franke logo. 2. Enter the PIN. 3. Press OK. ð In addition to the Individualization and data transfer menu, the number of available up- dates can be viewed. Service menu Individualization and data transfer Cleaning and maintenance 3 4. Select the Individualization and data transfer menu. 5. Select menu item 9 Update packages. 6. Select the desired update package and press the Download and import button. ð The update package is imported. 7. Press the Install button. ð The update package is installed.",
+      "token_count": 192,
+      "metadata": {
+        "source_page": 59,
+        "chunk_id": 58
+      }
+    },
+    {
+      "text": "| Troubleshooting 60 User manual A300 FB 14 TROUBLESHOOTING 14.1 Error messages If an error occurs, a symbol on the dashboard is highlighted in a particular color, depending on the type of error. The user can tap on this to display a window with further information and troubleshooting instruc- tions. 10:53 2017-10-16 The coffee bean store is empty. Please fill with coffee beans. Close Message with instructions Non-self-service mode Errors in the non-self-service mode are indicated via a highlighted symbol. Tap the symbol for further in- formation. 10:53 2017-10-16 Self-service operating mode When the self-service mode is selected, an error is indicated via a colored triangle in the upper right-hand corner of the operator panel. Tap the symbol for further information. 10:53 2020-04-0 The machine must be restarted in the event of serious errors. a) Restart the machine. b) Check the power supply if the machine fails to start. c) Contact your service technician if the machine cannot be started or if you are unable to rectify the er- ror.",
+      "token_count": 122,
+      "metadata": {
+        "source_page": 60,
+        "chunk_id": 59
+      }
+    },
+    {
+      "text": "Troubleshooting | 14 User manual A300 FB 61 14.1.1 Color code for error messages Temporary interruption System still fully functional System has limited functionality Some or all resources are locked 14.2 Troubleshooting the system Error message/problem Possible cause Measure Error message E663 empty drip tray appears even though the drip tray has been emptied Sensor signal disturbed by debris in- side the drip tray Clean and dry the inside of the drip tray. Additionally, clean and dry the mounting bay of the drip tray Sensor signal disturbed by damp back of the drip tray Clean and dry the back of the drip tray Descaler concentrate not being dispensed (error message E409) Descaling cartridge seal is damaged or clogged or descaling cartridge is empty Check the descaling cartridge fill level. Check the red adapter with the sealing ring and clear away any descaler crystals. Run the descaling process again Descaling cartridge needs replacing despite not being empty Descaling cartridge seal is damaged or clogged Insert a new descaling cartridge, check the red adapter with the sealing ring and remove any descaler crystals Error message E79 Flow meter error Water flow disrupted Check the water tank/main water con- nection coupling If the error message appears while a product is being dispensed, the brewing module strainer is probably blocked – Increase the grind coarseness and/or reduce the grind quantity – Remove the brewing module and rinse it out – Start the coffee machine cleaning process",
+      "token_count": 180,
+      "metadata": {
+        "source_page": 61,
+        "chunk_id": 60
+      }
+    },
+    {
+      "text": "| Troubleshooting 62 User manual A300 FB Error message/problem Possible cause Measure Touch screen not re- sponding correctly Overloaded machine software There are two different troubleshooting methods: – Method 1: Press and hold the red but- ton on the right-hand side of the op- erator panel for 10 seconds to restart – Method 2: Disconnect the coffee ma- chine from the power grid. Wait 1 minute before reconnecting the cof- fee machine to the power grid. Briefly press the red button on the right- hand side of the operator panel to switch it on Water level in the water tank is not detected Residues or deposits on the inner wall of the water tank Clean and rinse the water tank thoroughly 14.2.1 Restarting the machine 1. Press and hold the button [1] for 10 seconds. ð The machine will restart. ð The start screen is displayed. 14.3 Tips for good coffee beverages NOTICE Poor beverage quality The oil from the coffee beans is deposited on the inside of the bean hopper as a thin film of oil. This de- posited oil ages quickly and impairs the taste of the beverages produced. a) Remove the oil film from the inside of the bean hopper on a daily basis. b) To do this, use a dry cloth or a cloth moistened only with water. c) Do not use any cleaners, as these alter the taste of the coffee. The aromas of the coffee beans evaporate in the bean hopper as a result of heat and air exchange. The quality will have already deteriorated after 3 hours. a) Coffee beans should not be moist. b) Seal any open coffee bean packs in an airtight manner. c) Do not store coffee beans in a refrigerator or freezer. d) Only fill the coffee beans into the bean hopper that you will need for the next 3 hours.",
+      "token_count": 227,
+      "metadata": {
+        "source_page": 62,
+        "chunk_id": 61
+      }
+    },
+    {
+      "text": "Troubleshooting | 14 User manual A300 FB 63 14.4 Help with problems concerning product quality Problem Possible causes Possible remedies Coffee tastes stale Grind too coarse Select a finer grind Setting the grind coarseness [} 35] Too little coffee Increase coffee quantity Setting bever- ages [} 50] Temperature too low Increase temperature Setting beverages [} 50] Coffee is old Use fresh coffee Bean hopper not locked correctly Check the bean hopper latching mecha- nism Coffee tastes strange Poor grind Contact customer service Minimal coffee usage Fill a small amount of coffee beans into the bean hopper Spoiled coffee beans Replace coffee beans Cleaner residue Rinse the machine Dirty cup Check the dishwasher Poor water quality (chlorine, hard- ness, etc.) Have water quality tested Water quality [} 27] Coffee tastes bitter Temperature too high Reduce coffee temperature Setting bev- erages [} 50] Grind too fine Select a coarser grind Setting the grind coarseness [} 35] Coffee quantity too low Increase coffee quantity Setting bever- ages [} 50] Roast too dark Use lighter coffee roast Coffee tastes sour Temperature too low Increase coffee temperature Setting beverages [} 50] Roast too light Use darker coffee roast Grind too coarse Select a finer grind Setting the grind coarseness [} 35] Consistency of powder products Viscous Use less powder, use more water Watery Use more powder, use less water Powder clumping or moist Clean and dry powder system Taste of powder products Too sweet Use less powder, use more water Not sweet enough Use more powder, use less water Strange taste Clean powder system",
+      "token_count": 194,
+      "metadata": {
+        "source_page": 63,
+        "chunk_id": 62
+      }
+    },
+    {
+      "text": "| Decommissioning 64 User manual A300 FB 15 DECOMMISSIONING 15.1 Preparing for decommissioning 1. Clean the machine using the automatic Cleaning [} 40] function. 2. Empty the bean hopper and powder hopper. 3. Clean the bean hopper and powder hopper. 4. Clean the grounds container. 15.2 Back up data Back up the data if the machine is to be recommissioned later or if the machine is to be replaced by a ma- chine of the same type. This manual applies to coffee machines without Franke Digital Services. 1. In the service menu under Customization and data transfer, go to the menu item Go to Back up/load data. 2. Go to Back up/load data. 3. Connect the USB stick and Select Export. ð The machine data and the configuration will be saved on the USB stick. 4. Tap Yes to eject the USB stick after the backup. 15.3 Short-term decommissioning (up to 3 weeks) ü The machine remains in place. 1. Clean the machine using the automatic cleaning function. Cleaning [} 40] 2. Go to the energy-saving mode. 3. Disconnect the machine from the power supply. 4. Close the water supply if the machine has a main water connection. 5. Clean any add-on units. 6. Switch off the add-on units and disconnect them from the power grid. 15.4 Long-term decommissioning NOTICE Functionality of the machine is impaired in the event of long-term decommissioning and storage If you plan to start using your machine again at a later date, it is essential that service measures are imple- mented. The coffee machine must be maintained, installed, and cleaned before preparing any beverages. a) Contact the Franke Service team for information regarding proper decommissioning and storage. b) Have your coffee machine drained by your service technician. c) Remedial maintenance may be required when commissioning the machine if it has been stored in ex- cess of 6 months.",
+      "token_count": 217,
+      "metadata": {
+        "source_page": 64,
+        "chunk_id": 63
+      }
+    },
+    {
+      "text": "Decommissioning | 15 User manual A300 FB 65 15.5 Transport and storage Protect the machine from mechanical damage and adverse environmental conditions during transport and storage. Transport conditions Protect the machine from the following risks: – Vibrations – Dust – Sunlight – Falling or tipping over – Slipping during transport – Frost, if machine has not been drained and emptied completely Storage conditions – If the machine has been completely drained and emptied, it can be stored at -10 °C to 50 °C – Relative humidity: max. 80 % – It must be fixed in a suitably stabile position throughout – The machine should be in an upright position – The machine should be empty and the system drained – Machine and loose parts packaged, preferably in their original packaging 15.6 Recommissioning after prolonged periods of storage or non-use NOTICE Deterioration in storage Parts may no longer function as they should if they have been stored or unused for periods in excess of 6 months. a) Contact your service technician for information regarding repairing and recommissioning your ma- chine.",
+      "token_count": 132,
+      "metadata": {
+        "source_page": 65,
+        "chunk_id": 64
+      }
+    },
+    {
+      "text": "| Disposal of parts 66 User manual A300 FB 16 DISPOSAL OF PARTS Disposal of consumables – Beans, powder and coffee grounds can be composted. – Observe the information on the label when disposing of any unused cleaning supplies. – Dispose of the fluids from the cleaning container or the drip tray in the wastewater system. Disposal of the machine and other devices The appliance complies with European Directive 2012/19/EU regarding Waste Electrical and Electronic Equipment (WEEE) and must not be disposed of with household waste. Dispose of electronic parts separately. Dispose of plastic parts in accordance with their marking. Two people are required for transporting the coffee machine.",
+      "token_count": 77,
+      "metadata": {
+        "source_page": 66,
+        "chunk_id": 65
+      }
+    },
+    {
+      "text": "Technical data | 17 User manual A300 FB 67 17 TECHNICAL DATA Device type A300 FB (FCS4070) Dimensions: Width/height/depth (mm) 340/465/587 Weight (kg) 25 Bean hopper capacity kg Without bean hopper extension: 1 x 0,5/2 x 0,25 With bean hopper extension: 1x1,1/2x0,55 Powder hopper capacity (kg) 0,5/2x0,5 Noise emission (dB(A)) < 70 Ambient temperature (°C) 5-32 Humidity (%) Max. 80 Water tank (l) 4,8 17.1 Electrical connection data Voltage Main power connec- tion Power rating (max.) Fuse Frequency 110–127 V 1LNPE 1200-1500 W 15 A 60 Hz",
+      "token_count": 65,
+      "metadata": {
+        "source_page": 67,
+        "chunk_id": 66
+      }
+    },
+    {
+      "text": "Stichwortverzeichnis 68 User manual A300 FB INDEX Numeric 5-step method  11, 40 A Access rights  54 Ambient conditions  67 B Basic settings  29 Bean hopper  67 Beans Disposal  66 Beverage Preparing  38 C Cancel button  11 Care kit  45, 000, 000 Cleaning  41 Drip grid  37 Drip tray  36 Cleaning container Disposal of fluid  66 Cleaning supplies Disposal  66 Cleaning tablets  15 Coffee beans Filling  32 Storage  33 Coffee grounds Disposal  66 Coffee machine Cleaning  41 Credit Mode  21 D Dashboard  12 Decommissioning  64 Descaling  47 Due date  47 Performing  47 Determine water hardness  26 Disposal  66 Drip grid  37 Drip tray  36 Disposal of fluid  66 E Electronic parts Disposal  66 Error message Color code  14 Depiction  14 Error messages  60 G grind coarseness Setting  35 I Intended use  6 L Lime deposits  10 M Machine Restarting  62 Switching on  28 Switching on for the first time  29 Main water connection Requirements  26 Manual set  15 Media Back up  58 Loading  58 Milk spout  000 Minimum clearances  25 O Operating mode Non-self-service mode  60 Quick Select  20 Self-service  60 Operator panel",
+      "token_count": 136,
+      "metadata": {
+        "source_page": 68,
+        "chunk_id": 67
+      }
+    },
+    {
+      "text": "Stichwortverzeichnis User manual A300 FB 69 P PIN codes  49 Plastic parts Disposal  66 Powder Disposal  66 Product quality  63 R Requirements  11 Resources filling  30 Setting  51 S Safety  7 Screen Cleaning  44 Wipe protection  44 Setting beverages  51 Spout  38 Start button  12 Symbols  11 Dashboard  12 Instructions  12 Software  12 T Tips  11 Transport  66 Troubleshooting  62 Machine error  60 Type code  17 Type plate  16 U User manual  15 W Wastewater  28 Water quality  27 Water tank  67 filling  34 Inserting the  34 Wipe protection",
+      "token_count": 66,
+      "metadata": {
+        "source_page": 69,
+        "chunk_id": 68
+      }
+    },
+    {
+      "text": "",
+      "token_count": 0,
+      "metadata": {
+        "source_page": 70,
+        "chunk_id": 69
+      }
+    },
+    {
+      "text": "",
+      "token_count": 0,
+      "metadata": {
+        "source_page": 71,
+        "chunk_id": 70
+      }
+    },
+    {
+      "text": "Franke Coffee Systems GmbH Franke Strasse 1 97947 Grünsfeld Deutschland Tel.: +49 9346 9278 0 Fax: +49 9346 9278 100 www.franke.de Franke Coffee Systems UK Limited 6A Handley Page Way, Old Parkbury Lane, Colney Street, St Albans, Hertfordshire, AL2 2DQ England Tel.: +44 1923 635700 Fax: +44 1923 635701 www.franke.com Franke Coffee Systems Americas 800 Aviation Parkway Smyrna, TN 37167 USA Tel.: +1 615 462 4265 Fax: +1 615 462 4400 www.franke.com Franke-Str. 9 CH-4663 Aarburg Switzerland Tel. +41 62 787 31 31 www.franke.com coffee.franke.com Original operating instructions • 20265720 • 02 • 9/18/2025",
+      "token_count": 69,
+      "metadata": {
+        "source_page": 72,
+        "chunk_id": 71
+      }
+    }
+  ],
+  "chunk_stats": {
+    "min_tokens": 0,
+    "max_tokens": 313,
+    "avg_tokens": 122.01388888888889
+  }
+}
