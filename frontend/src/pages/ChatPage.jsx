@@ -112,55 +112,16 @@ const ChatPage = () => {
       flex: 1,
       width: '100%',
       maxWidth: '1000px',
-      overflowY: 'auto',
-      padding: '0 20px 20px 20px',
+      overflowX: 'hidden',
+      padding: '20px',
       display: 'flex',
       flexDirection: 'column',
       gap: '24px',
       zIndex: 1,
       scrollbarWidth: 'none',
       msOverflowStyle: 'none',
+      position: 'relative',
     },
-    // --- MESSAGE STYLES (UPDATED) ---
-    messageWrapper: (isUser) => ({
-      display: 'flex',
-      flexDirection: 'column',
-      // SWAPPED: User aligns flex-end (Right), AI aligns flex-start (Left)
-      alignItems: isUser ? 'flex-end' : 'flex-start',
-    }),
-    label: {
-      fontSize: '12px',
-      fontWeight: 'bold',
-      color: '#888',
-      marginBottom: '6px',
-      marginLeft: '12px',
-      marginRight: '12px',
-      textTransform: 'uppercase',
-    },
-    bubble: (isUser) => ({
-      padding: '18px 26px',
-      borderRadius: '10px',
-      fontSize: '16px',
-      maxWidth: '70%',
-      lineHeight: '1.5',
-      // User = White with subtle shadow, AI = Glassmorphism
-      backgroundColor: isUser
-        ? 'rgba(246, 245, 245, 0.56)'
-        : 'rgba(155, 155, 155, 0.08)',
-      border: isUser
-        ? '1px solid rgba(224, 221, 221, 0.83)'
-        : '1px solid rgba(255, 255, 255, 0.86)',
-      boxShadow: isUser
-        ? '0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05)'
-        : '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.4)',
-      color: '#333',
-      backdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
-      WebkitBackdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
-      // Add a little "tail" visual direction
-      borderBottomRightRadius: isUser ? '4px' : '24px',
-      borderBottomLeftRadius: isUser ? '24px' : '4px',
-      transition: 'all 0.3s ease',
-    }),
 
     // --- INPUT AREA ---
     floatingInputContainer: {

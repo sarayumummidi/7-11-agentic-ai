@@ -17,19 +17,22 @@ const MessageBubble = ({ text = '', isUser = false, label }) => {
   }
 
   const bubbleStyle = {
-    padding: '18px 26px',
-    borderRadius: '24px',
+    padding: '10px 14px',
+    borderRadius: '10px',
     fontSize: '16px',
     maxWidth: '70%',
     lineHeight: '1.5',
-    backgroundColor: isUser ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.25)',
-    border: isUser ? '1px solid rgba(0, 0, 0, 0.05)' : '1px solid rgba(255, 255, 255, 0.3)',
-    boxShadow: isUser
-      ? '0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05)'
-      : '0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.4)',
+    // User = White with subtle shadow, AI = Glassmorphism
+    backgroundColor: isUser
+      ? 'rgba(255, 255, 255, 0.49)'
+      : 'rgba(0, 0, 0, 0.04)',
+    border: isUser
+      ? '1px solid rgba(224, 221, 221, 0.83)'
+      : '1px solid rgba(255, 255, 255, 0.86)',
     color: '#333',
     backdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
     WebkitBackdropFilter: isUser ? 'none' : 'blur(20px) saturate(180%)',
+    // Add a little "tail" visual direction
     borderBottomRightRadius: isUser ? '4px' : '24px',
     borderBottomLeftRadius: isUser ? '24px' : '4px',
     transition: 'all 0.3s ease',
