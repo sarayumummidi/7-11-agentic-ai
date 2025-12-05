@@ -88,7 +88,7 @@ def retriever_agent(state):
     ]
 
     #take the top 5 after filtering
-    filtered_results = filtered_results[:8]
+    filtered_results = filtered_results[:5]
 
     #combine text for the LLM
     context = "\n\n".join([r["text"] for r in filtered_results])
