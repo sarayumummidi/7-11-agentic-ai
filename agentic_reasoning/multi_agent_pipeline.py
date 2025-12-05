@@ -9,9 +9,12 @@ the goal is to handle multi-step or cross-manual queries since we know that we c
 
 import sys
 from pathlib import Path
+import os
 
 #add the parent folder to Python's module search path
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+sys.path.append(str(PROJECT_ROOT))
 
 from retrieval_backbone.VectorDB import VectorDB
 from langchain_mistralai import ChatMistralAI
@@ -25,7 +28,8 @@ import os
 os.environ["MISTRAL_API_KEY"] = MISTRAL_API_KEY
 
 #load FAISS DB (in this case the multi-manual index)
-db = VectorDB.load(save_dir="retrieval_backbone/faiss_store")
+FAISS_DIR = PROJECT_ROOT / "retrieval_backbone" / "faiss_store"
+db = VectorDB.load(save_dir=str(FAISS_DIR))
 
 #load mistral llm
 llm = ChatMistralAI(model="mistral-large-latest", temperature=0.3)
@@ -73,7 +77,7 @@ def retriever_agent(state):
     manuals_mentioned = state["manuals_mentioned"]
     print(f"Retriever fetching chunks for manuals: {manuals_mentioned}")
 
-    #get all top results first
+    # get all top results first
     results = db.search(question, k=15)
 
     #filter results by manual metadata
@@ -84,7 +88,7 @@ def retriever_agent(state):
     ]
 
     #take the top 5 after filtering
-    filtered_results = filtered_results[:5]
+    filtered_results = filtered_results[:8]
 
     #combine text for the LLM
     context = "\n\n".join([r["text"] for r in filtered_results])
@@ -97,12 +101,13 @@ def retriever_agent(state):
     }
 
 
+
 def synthesizer_agent(state):
     #enerates a final human-readable answer using the LLM
     print("Synthesizer writing final answer.....")
 
     prompt = ChatPromptTemplate.from_template("""
-    You are an expert on Franke Coffee Systems. 
+    You are an expert on Franke Coffee Systems.
     Based on the context below, answer the user’s question clearly and concisely.
 
     CONTEXT:
@@ -140,7 +145,7 @@ workflow.set_entry_point("planner")
 
 #test
 if __name__ == "__main__":
-    user_question = "Compare the cleaning procedures of the A300 and A1000."
+    user_question = "How do I safely clean the milk system in the A1000 and what hazards should I watch out for?" #"Compare the cleaning procedures of the A300 and A1000."
     result = workflow.compile().invoke({"question": user_question})
 
     print("\nFinal Answer:\n")
