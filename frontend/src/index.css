@@ -59,6 +59,44 @@ button:focus-visible {
   font-style: normal;
 }
 
+/* Animated dots for "Thinking..." message */
+.thinking-dots {
+  display: inline-block;
+  width: 20px;
+  text-align: left;
+}
+
+.thinking-dot {
+  display: inline-block;
+  animation: thinkingPulse 1.4s infinite;
+  opacity: 0;
+}
+
+.thinking-dot-1 {
+  animation-delay: 0s;
+}
+
+.thinking-dot-2 {
+  animation-delay: 0.2s;
+}
+
+.thinking-dot-3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes thinkingPulse {
+  0%,
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

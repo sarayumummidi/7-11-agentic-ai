@@ -59,7 +59,14 @@ const ChatPage = () => {
         setMessages((prev) =>
           prev.map((msg) =>
             msg.id === aiMessageId
-              ? { ...msg, text: msg.text + event.data }
+              ? {
+                  ...msg,
+                  // Replace "Thinking..." with the actual response when streaming starts
+                  text:
+                    msg.text === 'Thinking...'
+                      ? event.data
+                      : msg.text + event.data,
+                }
               : msg
           )
         )

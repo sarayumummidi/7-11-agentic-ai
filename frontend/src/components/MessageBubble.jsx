@@ -45,12 +45,38 @@ const MessageBubble = ({ text = '', isUser = false, label }) => {
     fontFamily: 'Manrope',
   }
 
+  // Check if this is a "Thinking..." message
+  const isThinking = !isUser && text === 'Thinking...'
+
+  // Thinking message style - different font and animated dots
+  const thinkingStyle = {
+    fontFamily: 'system-ui, -apple-system, sans-serif',
+    fontStyle: 'italic',
+    color: '#666',
+    fontSize: '15px',
+    letterSpacing: '0.5px',
+  }
+
+  // Animated dots component
+  const AnimatedDots = () => (
+    <span className="thinking-dots">
+      <span className="thinking-dot thinking-dot-1">.</span>
+      <span className="thinking-dot thinking-dot-2">.</span>
+      <span className="thinking-dot thinking-dot-3">.</span>
+    </span>
+  )
+
   return (
     <div style={wrapperStyle}>
       {label && <span style={labelStyle}>{label}</span>}
       <div style={bubbleStyle}>
         {isUser ? (
           text
+        ) : isThinking ? (
+          <div style={thinkingStyle}>
+            Thinking
+            <AnimatedDots />
+          </div>
         ) : (
           <div style={markdownStyle}>
             <ReactMarkdown
