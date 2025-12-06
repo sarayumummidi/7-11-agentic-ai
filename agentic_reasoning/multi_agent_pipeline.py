@@ -27,12 +27,26 @@ import os
 #setup
 os.environ["MISTRAL_API_KEY"] = MISTRAL_API_KEY
 
-#load FAISS DB (in this case the multi-manual index)
-FAISS_DIR = PROJECT_ROOT / "retrieval_backbone" / "faiss_store"
-db = VectorDB.load(save_dir=str(FAISS_DIR))
+# FAISS DB path (lazy loading - only load when needed)
+FAISS_DIR = PROJECT_ROOT / "faiss_store"
 
-#load mistral llm
-llm = ChatMistralAI(model="mistral-large-latest", temperature=0.3)
+# Global variables for lazy loading
+_db = None
+_llm = None
+
+def get_db():
+    """Lazy load the FAISS database - only load when first needed"""
+    global _db
+    if _db is None:
+        _db = VectorDB.load(save_dir=str(FAISS_DIR))
+    return _db
+
+def get_llm():
+    """Lazy load the LLM - only load when first needed"""
+    global _llm
+    if _llm is None:
+        _llm = ChatMistralAI(model="mistral-large-latest", temperature=0.3, streaming=True)
+    return _llm
 
 
 def planner_agent(state):
@@ -77,6 +91,9 @@ def retriever_agent(state):
     manuals_mentioned = state["manuals_mentioned"]
     print(f"Retriever fetching chunks for manuals: {manuals_mentioned}")
 
+    # Lazy load database
+    db = get_db()
+    
     # get all top results first
     results = db.search(question, k=15)
 
@@ -104,8 +121,6 @@ def retriever_agent(state):
 
 def synthesizer_agent(state):
     #enerates a final human-readable answer using the LLM
-    print("Synthesizer writing final answer.....")
-
     prompt = ChatPromptTemplate.from_template("""
     You are an expert on Franke Coffee Systems.
     Based on the context below, answer the user’s question clearly and concisely.
@@ -119,13 +134,58 @@ def synthesizer_agent(state):
     ANSWER:
     """)
 
+    # Lazy load LLM
+    llm = get_llm()
+    
     chain = prompt | llm
+    # Use invoke() for LangGraph compatibility (nodes need to return complete state)
     response = chain.invoke({
         "context": state["context"],
         "question": state["question"]
     })
 
     return {"final_answer": response.content}
+
+async def stream_synthesizer_agent(context, question):
+    """
+    Stream LLM response token-by-token.
+    Returns an async iterator that yields content chunks.
+    """
+    prompt = ChatPromptTemplate.from_template("""
+    You are an expert on Franke Coffee Systems.
+    Based on the context below, answer the user’s question clearly and concisely.
+
+    CONTEXT:
+    {context}
+
+    QUESTION:
+    {question}
+
+    ANSWER:
+    """)
+    llm = get_llm()
+    chain = prompt | llm
+    
+    # Stream tokens as they're generated
+    async for chunk in chain.astream({
+        "context": context,
+        "question": question
+    }):
+        # Extract content from chunk
+        content = None
+        if hasattr(chunk, 'content'):
+            content = chunk.content
+        elif hasattr(chunk, 'text'):
+            content = chunk.text
+        elif isinstance(chunk, str):
+            content = chunk
+        elif hasattr(chunk, 'message') and hasattr(chunk.message, 'content'):
+            content = chunk.message.content
+        elif hasattr(chunk, 'get'):
+            content = chunk.get('content') or chunk.get('text')
+        
+        if content:
+            yield str(content)
 
 #create the Graph (agent flow)
 workflow = StateGraph(dict)

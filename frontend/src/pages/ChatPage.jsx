@@ -5,10 +5,9 @@ import logo from '../assets/7-11logo.png'
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([
-    { id: 1, text: 'What can I ask you to do?', isUser: true },
     {
       id: 2,
-      text: 'You can ask me about our slushie flavors, store locations, or current rewards!',
+      text: 'Ask me anything about 7-11!',
       isUser: false,
     },
   ])
@@ -23,20 +22,79 @@ const ChatPage = () => {
     scrollToBottom()
   }, [messages])
 
-  const handleSendMessage = (text) => {
+  const handleSendMessage = async (text) => {
     // Add User Message
     const userMessage = { id: Date.now(), text, isUser: true }
     setMessages((prev) => [...prev, userMessage])
 
-    // Simulate AI Response (Placeholder until your backend is connected)
-    setTimeout(() => {
-      const aiMessage = {
-        id: Date.now() + 1,
-        text: "I'm checking on that for you...",
-        isUser: false,
+    // Create placeholder AI message that will be updated as stream arrives
+    const aiMessageId = Date.now() + 1
+    const aiMessage = {
+      id: aiMessageId,
+      text: '',
+      isUser: false,
+    }
+    setMessages((prev) => [...prev, aiMessage])
+
+    // Connect to WebSocket and stream response
+    try {
+      // Determine WebSocket URL based on environment
+      // Default to localhost:8000 for development
+      const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+      const wsHost = apiUrl
+        .replace(/^https?:\/\//, '')
+        .replace(/^wss?:\/\//, '')
+      const wsUrl = `${wsProtocol}//${wsHost}/stream`
+
+      const ws = new WebSocket(wsUrl)
+
+      ws.onopen = () => {
+        // Send the question to the backend
+        ws.send(JSON.stringify({ question: text }))
       }
-      setMessages((prev) => [...prev, aiMessage])
-    }, 1000)
+
+      ws.onmessage = (event) => {
+        // Update the AI message with streaming text
+        setMessages((prev) =>
+          prev.map((msg) =>
+            msg.id === aiMessageId
+              ? { ...msg, text: msg.text + event.data }
+              : msg
+          )
+        )
+      }
+
+      ws.onerror = (error) => {
+        console.error('WebSocket error:', error)
+        setMessages((prev) =>
+          prev.map((msg) =>
+            msg.id === aiMessageId
+              ? {
+                  ...msg,
+                  text: 'Sorry, there was an error connecting to the server.',
+                }
+              : msg
+          )
+        )
+      }
+
+      ws.onclose = () => {
+        console.log('WebSocket connection closed')
+      }
+    } catch (error) {
+      console.error('Error setting up WebSocket:', error)
+      setMessages((prev) =>
+        prev.map((msg) =>
+          msg.id === aiMessageId
+            ? {
+                ...msg,
+                text: 'Sorry, there was an error connecting to the server.',
+              }
+            : msg
+        )
+      )
+    }
   }
 
   const styles = {

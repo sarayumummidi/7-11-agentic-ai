@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown'
 
 const MessageBubble = ({ text = '', isUser = false, label }) => {
   const wrapperStyle = {
@@ -38,10 +39,111 @@ const MessageBubble = ({ text = '', isUser = false, label }) => {
     transition: 'all 0.3s ease',
   }
 
+  // Markdown styles for AI messages
+  const markdownStyle = {
+    margin: 0,
+    fontFamily: 'Manrope',
+  }
+
   return (
     <div style={wrapperStyle}>
       {label && <span style={labelStyle}>{label}</span>}
-      <div style={bubbleStyle}>{text}</div>
+      <div style={bubbleStyle}>
+        {isUser ? (
+          text
+        ) : (
+          <div style={markdownStyle}>
+            <ReactMarkdown
+              components={{
+                // Style headings
+                h1: ({ children }) => (
+                  <h1
+                    style={{
+                      fontSize: '24px',
+                      fontWeight: 'bold',
+                      marginTop: '12px',
+                      marginBottom: '8px',
+                    }}
+                  >
+                    {children}
+                  </h1>
+                ),
+                h2: ({ children }) => (
+                  <h2
+                    style={{
+                      fontSize: '20px',
+                      fontWeight: 'bold',
+                      marginTop: '10px',
+                      marginBottom: '6px',
+                    }}
+                  >
+                    {children}
+                  </h2>
+                ),
+                h3: ({ children }) => (
+                  <h3
+                    style={{
+                      fontSize: '18px',
+                      fontWeight: 'bold',
+                      marginTop: '8px',
+                      marginBottom: '6px',
+                    }}
+                  >
+                    {children}
+                  </h3>
+                ),
+                // Style lists
+                ul: ({ children }) => (
+                  <ul
+                    style={{
+                      marginLeft: '20px',
+                      marginTop: '8px',
+                      marginBottom: '8px',
+                    }}
+                  >
+                    {children}
+                  </ul>
+                ),
+                ol: ({ children }) => (
+                  <ol
+                    style={{
+                      marginLeft: '20px',
+                      marginTop: '8px',
+                      marginBottom: '8px',
+                    }}
+                  >
+                    {children}
+                  </ol>
+                ),
+                li: ({ children }) => (
+                  <li style={{ marginBottom: '4px' }}>{children}</li>
+                ),
+                // Style paragraphs
+                p: ({ children }) => (
+                  <p
+                    style={{
+                      marginTop: '8px',
+                      marginBottom: '8px',
+                      margin: '8px 0',
+                    }}
+                  >
+                    {children}
+                  </p>
+                ),
+                // Style bold and italic
+                strong: ({ children }) => (
+                  <strong style={{ fontWeight: 'bold' }}>{children}</strong>
+                ),
+                em: ({ children }) => (
+                  <em style={{ fontStyle: 'italic' }}>{children}</em>
+                ),
+              }}
+            >
+              {text}
+            </ReactMarkdown>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
