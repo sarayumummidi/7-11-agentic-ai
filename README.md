@@ -11,7 +11,7 @@ Our goal is to demonstrate how an AI system can streamline information discovery
 | **Aydin Khan**             |                 |                                                                                      |
 | **Emily Wang**             |                 |                                                                                      |
 | **Sarayu Mummidi**         |                 |                                                                                      |
-| **Harshika Vijayabharath** |  @HarshikaV     | Implemented chat input box that accepts text and has send functionality              |
+| **Harshika Vijayabharath** |  @HarshikaV     | Developed an advanced chat input module supporting controlled text state, keyboard shortcuts, and integrated send-message operations within the chat workflow. |
 | **Isabelle Ye**            |                 |                                                                                      |
 | **Priya Deshmukh**         |  @priyasd-04    | Vector database design, pipeline from user query → embedding model → vector database → returning relevant chunks|
 
