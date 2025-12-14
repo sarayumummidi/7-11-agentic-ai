@@ -13,7 +13,7 @@ Our goal is to demonstrate how an AI system can streamline information discovery
 | **Sarayu Mummidi**         |                 |                                                                                      |
 | **Harshika Vijayabharath** |                 |                                                                                      |
 | **Isabelle Ye**            |                 |                                                                                      |
-| **Priya Deshmukh**         |                 |                                                                                      |
+| **Priya Deshmukh**         |  @priyasd-04    | Vector database design, pipeline from user query → embedding model → vector database → returning relevant chunks|
 
 
 ## 🎯 Project Highlights
