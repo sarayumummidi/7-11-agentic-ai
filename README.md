@@ -8,7 +8,7 @@ Our goal is to demonstrate how an AI system can streamline information discovery
 | Name                       | GitHub Handle   | Contribution                                                                         |
 | -------------------------- | --------------- | ------------------------------------------------------------------------------------ |
 | **Hikmah Mohammed**        | @hikmahmohammed | Multi-agent pipeline (Planner → Retriever → Synthesizer), multi-document PDF processing, retrieval backbone exploration, project documentation |
-| **Aydin Khan**             |                 |                                                                                      |
+| **Aydin Khan**             | @AydinK7        | Implemented the retrieval backbone with regex based PDF cleaning, LLM implementation with prompt engineering, and evaluated retrieval quality using relevant metrics|
 | **Emily Wang**             |                 |                                                                                      |
 | **Sarayu Mummidi**         |                 |                                                                                      |
 | **Harshika Vijayabharath** |  @HarshikaV     | Developed an advanced chat input module supporting controlled text state, keyboard shortcuts, and integrated send-message operations within the chat workflow. |
