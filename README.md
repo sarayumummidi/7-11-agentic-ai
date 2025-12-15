@@ -12,7 +12,7 @@ Our goal is to demonstrate how an AI system can streamline information discovery
 | **Emily Wang**             | @emily-wang22   | Developed frontend message bubble and implemented frontend-side API integration      |
 | **Sarayu Mummidi**         | @sarayumummidi  | Implemented FastAPI backend integrating the agentic workflow to the frontend, Real-time token by token streaming of LLM response, Frontend UI backdrop, and UI design/styling |
 | **Harshika Vijayabharath** |  @HarshikaV     | Developed an advanced chat input module supporting controlled text state, keyboard shortcuts, and integrated send-message operations within the chat workflow. |
-| **Isabelle Ye**            |                 |                                                                                      |
+| **Isabelle Ye**            |        @iaye1334         | Developed frontend AI chatbox input module chatpage UI, and integrated the send message operations|
 | **Priya Deshmukh**         |  @priyasd-04    | Vector database design, pipeline from user query → embedding model → vector database → returning relevant chunks|
 
 
