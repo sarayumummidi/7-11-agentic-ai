@@ -36,35 +36,45 @@ Our goal is to demonstrate how an AI system can streamline information discovery
 1. Clone Repository
    
 ```
-mvn clean test
+git clone https://github.com/sarayumummidi/7-11-agentic-ai
+```
+2. Go to the right directory
+```
+cd 7-11-agentic-ai
 ```
 
-2. Backend Setup
+3. Backend Setup
    
 ```
 pip install -r requirements.txt
 ```
 
-Create ```.env```:
+4. Update ```config.py```:
 
 ```
-OPENAI_API_KEY=your_key
-EMBEDDING_MODEL=text-embedding-3-large
-LLM_MODEL=mistral or gpt-4o-mini
+MISTRAL_API_KEY = your_key
 ```
 
+5. Run the backend server
 
-3. Frontend Setup
+```
+uvicorn main:app --reload
+```
+
+6. Frontend Setup
    
 ```
-
+cd frontend
+npm install
 ```
 
-4. Run Ingestion Pipeline
-   
+7. Run the frontend server
+```
+npm run dev
 ```
 
-```
+**The project will be available at ``http://localhost:5173`` to test.**
+
 
 
 ## 🏗️ Project Overview
